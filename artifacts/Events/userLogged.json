@@ -1,0 +1,15 @@
+{
+	"id": "f7eee3ad-5b30-476d-8a89-1d02a750d214",
+	"createdAt": "2024-05-14T14:31:04.000Z",
+	"createdBy": "admin",
+	"name": "userLogged",
+	"description": "1. Uno Card Game - User Logged Event",
+	"eventAction": "AppEvent",
+	"scriptId": null,
+	"jobId": null,
+	"workflowId": null,
+	"package": "69640c21-f356-40e3-acc5-667240d45a19",
+	"script": null,
+	"job": null,
+	"workflow": null
+}

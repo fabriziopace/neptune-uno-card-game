@@ -22,8 +22,20 @@
 	"reports": [],
 	"api_authentication": [],
 	"api_group": [],
-	"tile": [],
-	"category": [],
+	"tile": [
+		{
+			"id": "753c9fd0-c33b-40b5-b27f-e7f4ac84383d",
+			"description": "Play UNO! in Neptune with your friends!",
+			"name": "Uno Card Game Tile"
+		}
+	],
+	"category": [
+		{
+			"id": "f2307bd7-7af0-433a-a580-dd8b20c45b52",
+			"description": null,
+			"name": "Uno Card Game Tilegroup"
+		}
+	],
 	"launchpad": [],
 	"certificates": [],
 	"role": [],
@@ -34,7 +46,28 @@
 	"script_scheduler": [],
 	"wf_definition": [],
 	"connector": [],
-	"events": [],
+	"events": [
+		{
+			"id": "f7eee3ad-5b30-476d-8a89-1d02a750d214",
+			"name": "userLogged",
+			"description": "1. Uno Card Game - User Logged Event"
+		},
+		{
+			"id": "c61bf2e2-48e6-455c-a137-cec5cc59b2fd",
+			"name": "userLeft",
+			"description": "4. Uno Card Game - User Left Event"
+		},
+		{
+			"id": "5da5fcaf-f9d4-4375-8b1a-0a19e9eefc37",
+			"name": "sendUserInfo",
+			"description": "2. Uno Card Game - Send User Info Event"
+		},
+		{
+			"id": "11f38962-c89e-4453-ac2e-6ca2525dac66",
+			"name": "updateCards",
+			"description": "3. Uno Card Game - Update Cards Event"
+		}
+	],
 	"media_library": [],
 	"code_snippets": [],
 	"wf_determination": [],

@@ -1,0 +1,15 @@
+{
+	"id": "5da5fcaf-f9d4-4375-8b1a-0a19e9eefc37",
+	"createdAt": "2024-05-14T14:31:16.000Z",
+	"createdBy": "admin",
+	"name": "sendUserInfo",
+	"description": "2. Uno Card Game - Send User Info Event",
+	"eventAction": "AppEvent",
+	"scriptId": null,
+	"jobId": null,
+	"workflowId": null,
+	"package": "69640c21-f356-40e3-acc5-667240d45a19",
+	"script": null,
+	"job": null,
+	"workflow": null
+}

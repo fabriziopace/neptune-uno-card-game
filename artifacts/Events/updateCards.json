@@ -1,0 +1,15 @@
+{
+	"id": "11f38962-c89e-4453-ac2e-6ca2525dac66",
+	"createdAt": "2024-05-14T14:31:32.000Z",
+	"createdBy": "admin",
+	"name": "updateCards",
+	"description": "3. Uno Card Game - Update Cards Event",
+	"eventAction": "AppEvent",
+	"scriptId": null,
+	"jobId": null,
+	"workflowId": null,
+	"package": "69640c21-f356-40e3-acc5-667240d45a19",
+	"script": null,
+	"job": null,
+	"workflow": null
+}

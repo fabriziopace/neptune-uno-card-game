@@ -1,0 +1,15 @@
+{
+	"id": "c61bf2e2-48e6-455c-a137-cec5cc59b2fd",
+	"createdAt": "2024-05-14T14:31:43.000Z",
+	"createdBy": "admin",
+	"name": "userLeft",
+	"description": "4. Uno Card Game - User Left Event",
+	"eventAction": "AppEvent",
+	"scriptId": null,
+	"jobId": null,
+	"workflowId": null,
+	"package": "69640c21-f356-40e3-acc5-667240d45a19",
+	"script": null,
+	"job": null,
+	"workflow": null
+}
