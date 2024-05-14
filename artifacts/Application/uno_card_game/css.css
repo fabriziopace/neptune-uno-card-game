@@ -1,0 +1,826 @@
+// color vars
+$neptuneOrangeColor: #f6b221;
+$yellowColor: #f1c40f;
+$greenColor: #27ae60;
+$redColor: #e74c3c;
+$blueColor: #3498db;
+$blackColor: #000000;
+$disabledYellowColor: #71631f;
+$disabledGreenColor: #215b3f;
+$disabledRedColor: #6d3331;
+$disabledBlueColor: #265271;
+$disabledBlackColor: #35393d;
+$disabledWhiteColor: #777b7f;
+$greyColor: #262626;
+$whiteColor: #fff;
+$loyalBlueColor: #033d53;
+$brightBlueColor: #227093;
+$osloGreyColor: #7f8c8d;
+
+html {
+    height: 100%;
+}
+
+#body,
+.pageStyle {
+    background-color: $greyColor;
+}
+
+.formCreateRoom .sapMDialogScrollCont {
+    padding: 0;
+}
+
+.listUnoCalled .sapMListHdrText:before {
+    content: 'UNO!';
+    font-weight: bold;
+    border-radius: 5rem;
+    margin-right: .5rem;
+    background: $redColor;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.listCardsCurrentTurn .sapMListHdrText:after {
+    content: '\f521';
+    font-family: 'fa-solid';
+    color: $neptuneOrangeColor;
+}
+
+.listCardsCurrentTurn .sapMListHdrText {
+    color: $neptuneOrangeColor;
+}
+
+.listMyCards.listCardsCurrentTurn .sapMListHdrText:after {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.vboxGameTable {
+    background: $greyColor;
+    border: 1rem solid $greyColor;
+    width: 100%;
+    height: 100%;
+
+    .sapMFlexItem:has(.listMyCards) {
+        height: 32%;
+        align-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .vboxCenterGameTable {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .hboxCenterGameTable {
+        justify-content: center;
+
+        .sapMFlexItem:has(.listCardDeck) {
+            height: 100%;
+        }
+    }
+
+    .vboxCard .sapMFlexItem:has(.imageBackCardBody) {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+.listMyCards,
+.listMyCards ul,
+.listCardDeck,
+.listCardDeck ul {
+    height: 7rem;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.listCardDeck li:not(.listCardDeck li:first-child) {
+    margin-left: -5.005rem;
+}
+
+.listMyCards li:not(.listMyCards li:first-child) {
+    margin-left: -4rem;
+}
+
+.listMyCards,
+.listCardDeck {
+    li {
+        width: 5rem;
+    }
+
+    .sapMLIB {
+        background: transparent;
+        border-bottom: none;
+    }
+}
+
+.listMyCards .sapMListHdrText {
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    bottom: -2rem;
+    top: unset;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 20px;
+    line-height: 1.4;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+}
+
+.listOppCards .sapMListHdrText {
+    top: -2rem;
+    bottom: unset;
+    text-align: right;
+}
+
+$rotateMyCardDeg: -10;
+$rotateOppCardDeg: 10;
+
+@for $i from 1 through 100 {
+    $rotateMyCardDeg: $rotateMyCardDeg + 1;
+
+    .listMyCards li:nth-child(#{$i}) {
+        z-index: $i;
+        rotate: $rotateMyCardDeg + deg;
+    }
+
+    $rotateOppCardDeg: $rotateOppCardDeg - 1;
+
+    .listOppCards li:nth-child(#{$i}) {
+        z-index: $i;
+        rotate: $rotateOppCardDeg + deg;
+    }
+}
+
+$rotateSetColorCardDeg: -30;
+
+@for $i from 1 through 4 {
+    $rotateSetColorCardDeg: $rotateSetColorCardDeg + 10;
+
+    .listSetColor li:nth-child(#{$i}) {
+        z-index: $i;
+        rotate: $rotateSetColorCardDeg + deg;
+    }
+}
+
+$topCardPixel : 0.09;
+
+@for $i from 1 through 100 {
+    $topCardPixel: $topCardPixel - (0.08);
+
+    .listCardDeck li:nth-child(#{$i}) {
+        z-index: $i;
+        top: $topCardPixel + px;
+    }
+}
+
+.vboxCard {
+    height: calc(100% - 1px);
+    width: calc(100% - 1px);
+    border-radius: 0.9rem;
+    border: 0.5rem solid $whiteColor;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+    &:after {
+        content: " ";
+        position: absolute;
+        border-radius: 0.5rem;
+        width: calc(100% - 0.8rem);
+        height: calc(100% - 0.8rem);
+        left: 0.4rem;
+        top: 0.4rem;
+    }
+
+    .sapMFlexItem:has(.textCardHeader),
+    .sapMFlexItem:has(.textCardFooter) {
+        height: 1rem;
+    }
+
+    .sapMFlexItem:has(.textCardBody) {
+        height: 100%;
+    }
+}
+
+.textCardStyle {
+    z-index: 3;
+    color: $whiteColor;
+    position: relative;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.textCardHeader,
+.textCardFooter {
+    color: $whiteColor !important;
+    font-size: 1rem;
+}
+
+.textCardBody {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $whiteColor;
+    border-radius: 100%;
+    transform: skew(-25deg, 0deg);
+    font-style: normal;
+    width: calc(100% - 1rem);
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.textCardFooter {
+    display: flex;
+    justify-content: left;
+    rotate: 180deg;
+}
+
+.customListCardItem {
+    top: 0;
+    transition: top 0.5s;
+
+    .sapMLIBContent {
+        height: 100%;
+    }
+
+    &:hover {
+        background: transparent;
+        top: -1.5rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    .sapMLIBActive {
+        background: transparent;
+    }
+
+    &.sapMLIBSelected {
+        top: -1.5rem;
+    }
+
+    &.sapMLIBHoverable.sapMLIBSelected:hover {
+        background-color: transparent;
+    }
+}
+
+.customListMyCardsItem.sapMLIBTypeInactive:hover,
+.customListMyCardsItem.sapMLIBTypeInactive.sapMLIBSelected {
+    top: 0 !important;
+}
+
+.customListOppCardsItem {
+
+    &:hover,
+    &.sapMLIBSelected {
+        top: 0 !important;
+    }
+
+}
+
+// disabled cards (not allowed cards)
+.listMyCards .sapMLIBTypeInactive {
+
+    .textCardHeader,
+    .textCardFooter {
+        color: $disabledWhiteColor !important;
+    }
+
+    .vboxCard {
+        border-color: $disabledWhiteColor;
+    }
+
+    [data-color="red"].vboxCard:after {
+        background-color: $disabledRedColor;
+    }
+
+    [data-color="red"].vboxCard .textCardBody {
+        background-color: $disabledWhiteColor;
+        color: $disabledRedColor;
+    }
+
+    [data-color="blue"].vboxCard:after {
+        background-color: $disabledBlueColor;
+    }
+
+    [data-color="blue"].vboxCard .textCardBody {
+        background-color: $disabledWhiteColor;
+        color: $disabledBlueColor;
+    }
+
+    [data-color="green"].vboxCard:after {
+        background-color: $disabledGreenColor;
+    }
+
+    [data-color="green"].vboxCard .textCardBody {
+        background-color: $disabledWhiteColor;
+        color: $disabledGreenColor;
+    }
+
+    [data-color="yellow"].vboxCard:after {
+        background-color: $disabledYellowColor;
+    }
+
+    [data-color="yellow"].vboxCard .textCardBody {
+        background-color: $disabledWhiteColor;
+        color: $disabledYellowColor;
+    }
+
+    [data-color="black"].vboxCard:after {
+        background-color: $disabledBlackColor;
+    }
+
+    [data-color="black"].vboxCard .textCardBody {
+        background-color: $disabledWhiteColor;
+    }
+
+
+    [data-value="wild"].textCardStyle:after,
+    [data-value="wilddrawfour"].textCardBody:after {
+        background: linear-gradient(to right, $disabledRedColor 0%, $disabledRedColor 50%, $disabledBlueColor 50%, $disabledBlueColor 100%), linear-gradient(to right, $disabledYellowColor 0%, $disabledYellowColor 50%, $disabledGreenColor 50%, $disabledGreenColor 100%);
+        background-size: 100% 50%;
+        background-position: center top, center bottom;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+.listOppCards .sapMLIBTypeInactive {
+    .vboxCard {
+        border-color: $whiteColor;
+    }
+}
+
+
+// blue cards
+[data-color="blue"].vboxCard {
+    &:after {
+        background-color: $blueColor;
+    }
+
+    .textCardBody {
+        color: $blueColor;
+    }
+}
+
+// red cards
+[data-color="red"].vboxCard {
+    &:after {
+        background-color: $redColor;
+    }
+
+    .textCardBody {
+        color: $redColor;
+    }
+}
+
+// yellow cards
+[data-color="yellow"].vboxCard {
+    &:after {
+        background-color: $yellowColor;
+    }
+
+    .textCardBody {
+        color: $yellowColor;
+    }
+}
+
+
+// green cards
+[data-color="green"].vboxCard {
+    &:after {
+        background-color: $greenColor;
+    }
+
+    .textCardBody {
+        color: $greenColor;
+    }
+}
+
+// black cards
+[data-color="black"].vboxCard {
+    &:after {
+        background-color: $blackColor;
+    }
+
+    .textCardBody {
+        color: $blackColor;
+    }
+}
+
+// cards back
+.imageBackCardBody {
+    width: 3rem;
+    height: 3rem;
+}
+
+[data-showback="false"].vboxCard {
+    .imageBackCardBody {
+        display: none;
+    }
+}
+
+[data-showback="true"].vboxCard {
+    &:after {
+        background-color: $loyalBlueColor !important;
+    }
+
+    .sapMFlexItem:has(.textCardHeader),
+    .sapMFlexItem:has(.textCardBody),
+    .sapMFlexItem:has(.textCardFooter) {
+        display: none;
+    }
+
+    .imageBackCardBody {
+        display: block;
+    }
+}
+
+// underline on 6 and 9 cards
+[data-value="6"].textCardBody,
+[data-value="9"].textCardBody {
+    text-decoration: underline;
+}
+
+// mixin for common styles
+@mixin sapIconWhite($sapIcon: "") {
+    content: $sapIcon;
+    fill: $whiteColor;
+    font-family: SAP-icons;
+    font-style: normal;
+    font-weight: normal;
+}
+
+// skip cards
+[data-value="skip"].textCardStyle:after {
+    @include sapIconWhite($sapIcon: '\e23e');
+}
+
+// reverse cards
+[data-value="reverse"].textCardStyle:after {
+    @include sapIconWhite($sapIcon: '\e156');
+}
+
+// draw two cards
+[data-value="drawtwo"].textCardHeader:after,
+[data-value="drawtwo"].textCardFooter:after {
+    content: '+2';
+    fill: $whiteColor;
+}
+
+[data-value="drawtwo"].textCardBody:after {
+    @include sapIconWhite($sapIcon: '\e1f3');
+}
+
+// mixin for common styles
+@mixin wildIcon($sapIcon: "") {
+    content: $sapIcon;
+    font-family: SAP-icons;
+    font-style: normal;
+    font-weight: normal;
+    background: linear-gradient(to right, $redColor 0%, $redColor 50%, $blueColor 50%, $blueColor 100%), linear-gradient(to right, $yellowColor 0%, $yellowColor 50%, $greenColor 50%, $greenColor 100%);
+    background-size: 100% 50%;
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// wild cards
+[data-value="wild"].textCardStyle:after {
+    @include wildIcon($sapIcon: '\e145');
+}
+
+// wild draw four cards
+[data-value="wilddrawfour"].textCardHeader:after,
+[data-value="wilddrawfour"].textCardFooter:after {
+    content: '+4';
+    fill: $whiteColor;
+}
+
+[data-value="wilddrawfour"].textCardBody:after {
+    @include wildIcon($sapIcon: '\e0bc');
+}
+
+[data-color="red"].barFooter {
+    border-color: $redColor;
+}
+
+[data-color="blue"].barFooter {
+    border-color: $blueColor;
+}
+
+[data-color="yellow"].barFooter {
+    border-color: $yellowColor;
+}
+
+[data-color="green"].barFooter {
+    border-color: $greenColor;
+}
+
+.barFooter {
+    border-top: 0px !important;
+    border-bottom: 10px solid $greyColor;
+
+    &.sapMBar,
+    .sapMBarPH,
+    .sapMBtn {
+        height: 4rem;
+        background: $greyColor;
+    }
+
+    .sapMBtnInner {
+        height: 3.5rem;
+    }
+
+    .sapMBtnInner {
+        height: 3.5rem;
+        border-radius: 1rem;
+        border: 4px solid white !important;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .sapUiIcon {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        line-height: 1rem;
+    }
+
+    .sapMBtnContent {
+        font-size: 1rem;
+    }
+
+    &.sapMIBar .sapMBarChild {
+        margin: 2px !important;
+    }
+
+    .sapMBtnText {
+        font-size: 13px;
+    }
+}
+
+
+.dialogSetColor .sapMDialogSection {
+    padding: 2rem;
+}
+
+@media only screen and (min-height: 900px) and (max-height: 1139px) {
+    .listCardDeck li:not(.listCardDeck li:first-child) {
+        margin-left: -9.009rem;
+    }
+
+    .listMyCards,
+    .listMyCards ul,
+    .listCardDeck,
+    .listCardDeck ul {
+        height: 12rem;
+    }
+
+    .listMyCards,
+    .listCardDeck {
+        li {
+            width: 9rem;
+        }
+    }
+
+    .vboxCard {
+        border: 1.2rem solid $whiteColor;
+        border-radius: 0.7rem;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            border-radius: 0.5rem;
+            width: calc(100% - 1.4rem);
+            height: calc(100% - 1.4rem);
+            left: 0.7rem;
+            top: 0.7rem;
+        }
+
+        .sapMFlexItem:has(.textCardHeader),
+        .sapMFlexItem:has(.textCardFooter) {
+            height: 1.3rem;
+        }
+    }
+
+    .listMyCards li:not(.listMyCards li:first-child) {
+        margin-left: -7rem;
+    }
+
+    .imageBackCardBody {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .textCardBody {
+        width: calc(100% - 2rem);
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .textCardHeader,
+    .textCardFooter {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-height: 1140px) and (max-height: 1319px) {
+    .listCardDeck li:not(.listCardDeck li:first-child) {
+        margin-left: -12.009rem;
+    }
+
+    .listMyCards,
+    .listMyCards ul,
+    .listCardDeck,
+    .listCardDeck ul {
+        height: 16rem;
+    }
+
+    .listMyCards,
+    .listCardDeck {
+        li {
+            width: 12rem;
+        }
+    }
+
+    .vboxCard {
+        border: 1.5rem solid $whiteColor;
+        border-radius: 1.5rem;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            border-radius: 1rem;
+            width: calc(100% - 2rem);
+            height: calc(100% - 2rem);
+            left: 1rem;
+            top: 1rem;
+        }
+
+        .sapMFlexItem:has(.textCardHeader),
+        .sapMFlexItem:has(.textCardFooter) {
+            height: 2rem;
+        }
+    }
+
+    .listMyCards li:not(.listMyCards li:first-child) {
+        margin-left: -9rem;
+    }
+
+    .imageBackCardBody {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .textCardBody {
+        width: calc(100% - 4rem);
+        font-size: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .textCardHeader,
+    .textCardFooter {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-height: 1320px) {
+    .listCardDeck li:not(.listCardDeck li:first-child) {
+        margin-left: -15.009rem;
+    }
+
+    .listMyCards,
+    .listMyCards ul,
+    .listCardDeck,
+    .listCardDeck ul {
+        height: 20rem;
+    }
+
+    .listMyCards,
+    .listCardDeck {
+        li {
+            width: 15rem;
+        }
+    }
+
+    .vboxCard {
+        border: 1.5rem solid $whiteColor;
+        border-radius: 1.5rem;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            border-radius: 1rem;
+            width: calc(100% - 2rem);
+            height: calc(100% - 2rem);
+            left: 1rem;
+            top: 1rem;
+        }
+
+        .sapMFlexItem:has(.textCardHeader),
+        .sapMFlexItem:has(.textCardFooter) {
+            height: 2rem;
+        }
+    }
+
+    .listMyCards li:not(.listMyCards li:first-child) {
+        margin-left: -12rem;
+    }
+
+    .imageBackCardBody {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .textCardBody {
+        width: calc(100% - 4rem);
+        font-size: 7rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .textCardHeader,
+    .textCardFooter {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-height: 900px) {
+    .vboxGameTable {
+        border: 2rem solid $greyColor;
+    }
+
+    .hboxCenterGameTable {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .customListCardItem {
+
+        &:hover,
+        &.sapMLIBSelected {
+            top: -3rem;
+        }
+    }
+
+    .customListOppCardsItem {
+
+        &:hover,
+        &.sapMLIBSelected {
+            top: 0 !important;
+        }
+
+    }
+
+    .dialogSetColor .sapMDialogSection {
+        padding: 5rem;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .barFooter .sapUiIcon {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        line-height: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .barFooter .sapUiIcon {
+        font-size: 1.5rem;
+        padding-top: 0rem;
+        line-height: 2rem;
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-height: 568px) {
+    .vboxGameTable {
+        .sapMFlexItem:has(.listMyCards) {
+            margin-bottom: -1rem;
+        }
+    }
+}

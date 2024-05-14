@@ -1,0 +1,2156 @@
+html {
+  height: 100%;
+}
+
+#body,
+.pageStyle {
+  background-color: #262626;
+}
+
+.formCreateRoom .sapMDialogScrollCont {
+  padding: 0;
+}
+
+.listUnoCalled .sapMListHdrText:before {
+  content: "UNO!";
+  font-weight: bold;
+  border-radius: 5rem;
+  margin-right: 0.5rem;
+  background: #e74c3c;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.listCardsCurrentTurn .sapMListHdrText:after {
+  content: "\f521";
+  font-family: "fa-solid";
+  color: #f6b221;
+}
+
+.listCardsCurrentTurn .sapMListHdrText {
+  color: #f6b221;
+}
+
+.listMyCards.listCardsCurrentTurn .sapMListHdrText:after {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.vboxGameTable {
+  background: #262626;
+  border: 1rem solid #262626;
+  width: 100%;
+  height: 100%;
+}
+.vboxGameTable .sapMFlexItem:has(.listMyCards) {
+  height: 32%;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+.vboxGameTable .vboxCenterGameTable {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.vboxGameTable .hboxCenterGameTable {
+  justify-content: center;
+}
+.vboxGameTable .hboxCenterGameTable .sapMFlexItem:has(.listCardDeck) {
+  height: 100%;
+}
+.vboxGameTable .vboxCard .sapMFlexItem:has(.imageBackCardBody) {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.listMyCards,
+.listMyCards ul,
+.listCardDeck,
+.listCardDeck ul {
+  height: 7rem;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.listCardDeck li:not(.listCardDeck li:first-child) {
+  margin-left: -5.005rem;
+}
+
+.listMyCards li:not(.listMyCards li:first-child) {
+  margin-left: -4rem;
+}
+
+.listMyCards li,
+.listCardDeck li {
+  width: 5rem;
+}
+.listMyCards .sapMLIB,
+.listCardDeck .sapMLIB {
+  background: transparent;
+  border-bottom: none;
+}
+
+.listMyCards .sapMListHdrText {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: absolute;
+  bottom: -2rem;
+  top: unset;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 20px;
+  line-height: 1.4;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: normal;
+  text-align: left;
+}
+
+.listOppCards .sapMListHdrText {
+  top: -2rem;
+  bottom: unset;
+  text-align: right;
+}
+
+.listMyCards li:nth-child(1) {
+  z-index: 1;
+  rotate: -9deg;
+}
+
+.listOppCards li:nth-child(1) {
+  z-index: 1;
+  rotate: 9deg;
+}
+
+.listMyCards li:nth-child(2) {
+  z-index: 2;
+  rotate: -8deg;
+}
+
+.listOppCards li:nth-child(2) {
+  z-index: 2;
+  rotate: 8deg;
+}
+
+.listMyCards li:nth-child(3) {
+  z-index: 3;
+  rotate: -7deg;
+}
+
+.listOppCards li:nth-child(3) {
+  z-index: 3;
+  rotate: 7deg;
+}
+
+.listMyCards li:nth-child(4) {
+  z-index: 4;
+  rotate: -6deg;
+}
+
+.listOppCards li:nth-child(4) {
+  z-index: 4;
+  rotate: 6deg;
+}
+
+.listMyCards li:nth-child(5) {
+  z-index: 5;
+  rotate: -5deg;
+}
+
+.listOppCards li:nth-child(5) {
+  z-index: 5;
+  rotate: 5deg;
+}
+
+.listMyCards li:nth-child(6) {
+  z-index: 6;
+  rotate: -4deg;
+}
+
+.listOppCards li:nth-child(6) {
+  z-index: 6;
+  rotate: 4deg;
+}
+
+.listMyCards li:nth-child(7) {
+  z-index: 7;
+  rotate: -3deg;
+}
+
+.listOppCards li:nth-child(7) {
+  z-index: 7;
+  rotate: 3deg;
+}
+
+.listMyCards li:nth-child(8) {
+  z-index: 8;
+  rotate: -2deg;
+}
+
+.listOppCards li:nth-child(8) {
+  z-index: 8;
+  rotate: 2deg;
+}
+
+.listMyCards li:nth-child(9) {
+  z-index: 9;
+  rotate: -1deg;
+}
+
+.listOppCards li:nth-child(9) {
+  z-index: 9;
+  rotate: 1deg;
+}
+
+.listMyCards li:nth-child(10) {
+  z-index: 10;
+  rotate: 0deg;
+}
+
+.listOppCards li:nth-child(10) {
+  z-index: 10;
+  rotate: 0deg;
+}
+
+.listMyCards li:nth-child(11) {
+  z-index: 11;
+  rotate: 1deg;
+}
+
+.listOppCards li:nth-child(11) {
+  z-index: 11;
+  rotate: -1deg;
+}
+
+.listMyCards li:nth-child(12) {
+  z-index: 12;
+  rotate: 2deg;
+}
+
+.listOppCards li:nth-child(12) {
+  z-index: 12;
+  rotate: -2deg;
+}
+
+.listMyCards li:nth-child(13) {
+  z-index: 13;
+  rotate: 3deg;
+}
+
+.listOppCards li:nth-child(13) {
+  z-index: 13;
+  rotate: -3deg;
+}
+
+.listMyCards li:nth-child(14) {
+  z-index: 14;
+  rotate: 4deg;
+}
+
+.listOppCards li:nth-child(14) {
+  z-index: 14;
+  rotate: -4deg;
+}
+
+.listMyCards li:nth-child(15) {
+  z-index: 15;
+  rotate: 5deg;
+}
+
+.listOppCards li:nth-child(15) {
+  z-index: 15;
+  rotate: -5deg;
+}
+
+.listMyCards li:nth-child(16) {
+  z-index: 16;
+  rotate: 6deg;
+}
+
+.listOppCards li:nth-child(16) {
+  z-index: 16;
+  rotate: -6deg;
+}
+
+.listMyCards li:nth-child(17) {
+  z-index: 17;
+  rotate: 7deg;
+}
+
+.listOppCards li:nth-child(17) {
+  z-index: 17;
+  rotate: -7deg;
+}
+
+.listMyCards li:nth-child(18) {
+  z-index: 18;
+  rotate: 8deg;
+}
+
+.listOppCards li:nth-child(18) {
+  z-index: 18;
+  rotate: -8deg;
+}
+
+.listMyCards li:nth-child(19) {
+  z-index: 19;
+  rotate: 9deg;
+}
+
+.listOppCards li:nth-child(19) {
+  z-index: 19;
+  rotate: -9deg;
+}
+
+.listMyCards li:nth-child(20) {
+  z-index: 20;
+  rotate: 10deg;
+}
+
+.listOppCards li:nth-child(20) {
+  z-index: 20;
+  rotate: -10deg;
+}
+
+.listMyCards li:nth-child(21) {
+  z-index: 21;
+  rotate: 11deg;
+}
+
+.listOppCards li:nth-child(21) {
+  z-index: 21;
+  rotate: -11deg;
+}
+
+.listMyCards li:nth-child(22) {
+  z-index: 22;
+  rotate: 12deg;
+}
+
+.listOppCards li:nth-child(22) {
+  z-index: 22;
+  rotate: -12deg;
+}
+
+.listMyCards li:nth-child(23) {
+  z-index: 23;
+  rotate: 13deg;
+}
+
+.listOppCards li:nth-child(23) {
+  z-index: 23;
+  rotate: -13deg;
+}
+
+.listMyCards li:nth-child(24) {
+  z-index: 24;
+  rotate: 14deg;
+}
+
+.listOppCards li:nth-child(24) {
+  z-index: 24;
+  rotate: -14deg;
+}
+
+.listMyCards li:nth-child(25) {
+  z-index: 25;
+  rotate: 15deg;
+}
+
+.listOppCards li:nth-child(25) {
+  z-index: 25;
+  rotate: -15deg;
+}
+
+.listMyCards li:nth-child(26) {
+  z-index: 26;
+  rotate: 16deg;
+}
+
+.listOppCards li:nth-child(26) {
+  z-index: 26;
+  rotate: -16deg;
+}
+
+.listMyCards li:nth-child(27) {
+  z-index: 27;
+  rotate: 17deg;
+}
+
+.listOppCards li:nth-child(27) {
+  z-index: 27;
+  rotate: -17deg;
+}
+
+.listMyCards li:nth-child(28) {
+  z-index: 28;
+  rotate: 18deg;
+}
+
+.listOppCards li:nth-child(28) {
+  z-index: 28;
+  rotate: -18deg;
+}
+
+.listMyCards li:nth-child(29) {
+  z-index: 29;
+  rotate: 19deg;
+}
+
+.listOppCards li:nth-child(29) {
+  z-index: 29;
+  rotate: -19deg;
+}
+
+.listMyCards li:nth-child(30) {
+  z-index: 30;
+  rotate: 20deg;
+}
+
+.listOppCards li:nth-child(30) {
+  z-index: 30;
+  rotate: -20deg;
+}
+
+.listMyCards li:nth-child(31) {
+  z-index: 31;
+  rotate: 21deg;
+}
+
+.listOppCards li:nth-child(31) {
+  z-index: 31;
+  rotate: -21deg;
+}
+
+.listMyCards li:nth-child(32) {
+  z-index: 32;
+  rotate: 22deg;
+}
+
+.listOppCards li:nth-child(32) {
+  z-index: 32;
+  rotate: -22deg;
+}
+
+.listMyCards li:nth-child(33) {
+  z-index: 33;
+  rotate: 23deg;
+}
+
+.listOppCards li:nth-child(33) {
+  z-index: 33;
+  rotate: -23deg;
+}
+
+.listMyCards li:nth-child(34) {
+  z-index: 34;
+  rotate: 24deg;
+}
+
+.listOppCards li:nth-child(34) {
+  z-index: 34;
+  rotate: -24deg;
+}
+
+.listMyCards li:nth-child(35) {
+  z-index: 35;
+  rotate: 25deg;
+}
+
+.listOppCards li:nth-child(35) {
+  z-index: 35;
+  rotate: -25deg;
+}
+
+.listMyCards li:nth-child(36) {
+  z-index: 36;
+  rotate: 26deg;
+}
+
+.listOppCards li:nth-child(36) {
+  z-index: 36;
+  rotate: -26deg;
+}
+
+.listMyCards li:nth-child(37) {
+  z-index: 37;
+  rotate: 27deg;
+}
+
+.listOppCards li:nth-child(37) {
+  z-index: 37;
+  rotate: -27deg;
+}
+
+.listMyCards li:nth-child(38) {
+  z-index: 38;
+  rotate: 28deg;
+}
+
+.listOppCards li:nth-child(38) {
+  z-index: 38;
+  rotate: -28deg;
+}
+
+.listMyCards li:nth-child(39) {
+  z-index: 39;
+  rotate: 29deg;
+}
+
+.listOppCards li:nth-child(39) {
+  z-index: 39;
+  rotate: -29deg;
+}
+
+.listMyCards li:nth-child(40) {
+  z-index: 40;
+  rotate: 30deg;
+}
+
+.listOppCards li:nth-child(40) {
+  z-index: 40;
+  rotate: -30deg;
+}
+
+.listMyCards li:nth-child(41) {
+  z-index: 41;
+  rotate: 31deg;
+}
+
+.listOppCards li:nth-child(41) {
+  z-index: 41;
+  rotate: -31deg;
+}
+
+.listMyCards li:nth-child(42) {
+  z-index: 42;
+  rotate: 32deg;
+}
+
+.listOppCards li:nth-child(42) {
+  z-index: 42;
+  rotate: -32deg;
+}
+
+.listMyCards li:nth-child(43) {
+  z-index: 43;
+  rotate: 33deg;
+}
+
+.listOppCards li:nth-child(43) {
+  z-index: 43;
+  rotate: -33deg;
+}
+
+.listMyCards li:nth-child(44) {
+  z-index: 44;
+  rotate: 34deg;
+}
+
+.listOppCards li:nth-child(44) {
+  z-index: 44;
+  rotate: -34deg;
+}
+
+.listMyCards li:nth-child(45) {
+  z-index: 45;
+  rotate: 35deg;
+}
+
+.listOppCards li:nth-child(45) {
+  z-index: 45;
+  rotate: -35deg;
+}
+
+.listMyCards li:nth-child(46) {
+  z-index: 46;
+  rotate: 36deg;
+}
+
+.listOppCards li:nth-child(46) {
+  z-index: 46;
+  rotate: -36deg;
+}
+
+.listMyCards li:nth-child(47) {
+  z-index: 47;
+  rotate: 37deg;
+}
+
+.listOppCards li:nth-child(47) {
+  z-index: 47;
+  rotate: -37deg;
+}
+
+.listMyCards li:nth-child(48) {
+  z-index: 48;
+  rotate: 38deg;
+}
+
+.listOppCards li:nth-child(48) {
+  z-index: 48;
+  rotate: -38deg;
+}
+
+.listMyCards li:nth-child(49) {
+  z-index: 49;
+  rotate: 39deg;
+}
+
+.listOppCards li:nth-child(49) {
+  z-index: 49;
+  rotate: -39deg;
+}
+
+.listMyCards li:nth-child(50) {
+  z-index: 50;
+  rotate: 40deg;
+}
+
+.listOppCards li:nth-child(50) {
+  z-index: 50;
+  rotate: -40deg;
+}
+
+.listMyCards li:nth-child(51) {
+  z-index: 51;
+  rotate: 41deg;
+}
+
+.listOppCards li:nth-child(51) {
+  z-index: 51;
+  rotate: -41deg;
+}
+
+.listMyCards li:nth-child(52) {
+  z-index: 52;
+  rotate: 42deg;
+}
+
+.listOppCards li:nth-child(52) {
+  z-index: 52;
+  rotate: -42deg;
+}
+
+.listMyCards li:nth-child(53) {
+  z-index: 53;
+  rotate: 43deg;
+}
+
+.listOppCards li:nth-child(53) {
+  z-index: 53;
+  rotate: -43deg;
+}
+
+.listMyCards li:nth-child(54) {
+  z-index: 54;
+  rotate: 44deg;
+}
+
+.listOppCards li:nth-child(54) {
+  z-index: 54;
+  rotate: -44deg;
+}
+
+.listMyCards li:nth-child(55) {
+  z-index: 55;
+  rotate: 45deg;
+}
+
+.listOppCards li:nth-child(55) {
+  z-index: 55;
+  rotate: -45deg;
+}
+
+.listMyCards li:nth-child(56) {
+  z-index: 56;
+  rotate: 46deg;
+}
+
+.listOppCards li:nth-child(56) {
+  z-index: 56;
+  rotate: -46deg;
+}
+
+.listMyCards li:nth-child(57) {
+  z-index: 57;
+  rotate: 47deg;
+}
+
+.listOppCards li:nth-child(57) {
+  z-index: 57;
+  rotate: -47deg;
+}
+
+.listMyCards li:nth-child(58) {
+  z-index: 58;
+  rotate: 48deg;
+}
+
+.listOppCards li:nth-child(58) {
+  z-index: 58;
+  rotate: -48deg;
+}
+
+.listMyCards li:nth-child(59) {
+  z-index: 59;
+  rotate: 49deg;
+}
+
+.listOppCards li:nth-child(59) {
+  z-index: 59;
+  rotate: -49deg;
+}
+
+.listMyCards li:nth-child(60) {
+  z-index: 60;
+  rotate: 50deg;
+}
+
+.listOppCards li:nth-child(60) {
+  z-index: 60;
+  rotate: -50deg;
+}
+
+.listMyCards li:nth-child(61) {
+  z-index: 61;
+  rotate: 51deg;
+}
+
+.listOppCards li:nth-child(61) {
+  z-index: 61;
+  rotate: -51deg;
+}
+
+.listMyCards li:nth-child(62) {
+  z-index: 62;
+  rotate: 52deg;
+}
+
+.listOppCards li:nth-child(62) {
+  z-index: 62;
+  rotate: -52deg;
+}
+
+.listMyCards li:nth-child(63) {
+  z-index: 63;
+  rotate: 53deg;
+}
+
+.listOppCards li:nth-child(63) {
+  z-index: 63;
+  rotate: -53deg;
+}
+
+.listMyCards li:nth-child(64) {
+  z-index: 64;
+  rotate: 54deg;
+}
+
+.listOppCards li:nth-child(64) {
+  z-index: 64;
+  rotate: -54deg;
+}
+
+.listMyCards li:nth-child(65) {
+  z-index: 65;
+  rotate: 55deg;
+}
+
+.listOppCards li:nth-child(65) {
+  z-index: 65;
+  rotate: -55deg;
+}
+
+.listMyCards li:nth-child(66) {
+  z-index: 66;
+  rotate: 56deg;
+}
+
+.listOppCards li:nth-child(66) {
+  z-index: 66;
+  rotate: -56deg;
+}
+
+.listMyCards li:nth-child(67) {
+  z-index: 67;
+  rotate: 57deg;
+}
+
+.listOppCards li:nth-child(67) {
+  z-index: 67;
+  rotate: -57deg;
+}
+
+.listMyCards li:nth-child(68) {
+  z-index: 68;
+  rotate: 58deg;
+}
+
+.listOppCards li:nth-child(68) {
+  z-index: 68;
+  rotate: -58deg;
+}
+
+.listMyCards li:nth-child(69) {
+  z-index: 69;
+  rotate: 59deg;
+}
+
+.listOppCards li:nth-child(69) {
+  z-index: 69;
+  rotate: -59deg;
+}
+
+.listMyCards li:nth-child(70) {
+  z-index: 70;
+  rotate: 60deg;
+}
+
+.listOppCards li:nth-child(70) {
+  z-index: 70;
+  rotate: -60deg;
+}
+
+.listMyCards li:nth-child(71) {
+  z-index: 71;
+  rotate: 61deg;
+}
+
+.listOppCards li:nth-child(71) {
+  z-index: 71;
+  rotate: -61deg;
+}
+
+.listMyCards li:nth-child(72) {
+  z-index: 72;
+  rotate: 62deg;
+}
+
+.listOppCards li:nth-child(72) {
+  z-index: 72;
+  rotate: -62deg;
+}
+
+.listMyCards li:nth-child(73) {
+  z-index: 73;
+  rotate: 63deg;
+}
+
+.listOppCards li:nth-child(73) {
+  z-index: 73;
+  rotate: -63deg;
+}
+
+.listMyCards li:nth-child(74) {
+  z-index: 74;
+  rotate: 64deg;
+}
+
+.listOppCards li:nth-child(74) {
+  z-index: 74;
+  rotate: -64deg;
+}
+
+.listMyCards li:nth-child(75) {
+  z-index: 75;
+  rotate: 65deg;
+}
+
+.listOppCards li:nth-child(75) {
+  z-index: 75;
+  rotate: -65deg;
+}
+
+.listMyCards li:nth-child(76) {
+  z-index: 76;
+  rotate: 66deg;
+}
+
+.listOppCards li:nth-child(76) {
+  z-index: 76;
+  rotate: -66deg;
+}
+
+.listMyCards li:nth-child(77) {
+  z-index: 77;
+  rotate: 67deg;
+}
+
+.listOppCards li:nth-child(77) {
+  z-index: 77;
+  rotate: -67deg;
+}
+
+.listMyCards li:nth-child(78) {
+  z-index: 78;
+  rotate: 68deg;
+}
+
+.listOppCards li:nth-child(78) {
+  z-index: 78;
+  rotate: -68deg;
+}
+
+.listMyCards li:nth-child(79) {
+  z-index: 79;
+  rotate: 69deg;
+}
+
+.listOppCards li:nth-child(79) {
+  z-index: 79;
+  rotate: -69deg;
+}
+
+.listMyCards li:nth-child(80) {
+  z-index: 80;
+  rotate: 70deg;
+}
+
+.listOppCards li:nth-child(80) {
+  z-index: 80;
+  rotate: -70deg;
+}
+
+.listMyCards li:nth-child(81) {
+  z-index: 81;
+  rotate: 71deg;
+}
+
+.listOppCards li:nth-child(81) {
+  z-index: 81;
+  rotate: -71deg;
+}
+
+.listMyCards li:nth-child(82) {
+  z-index: 82;
+  rotate: 72deg;
+}
+
+.listOppCards li:nth-child(82) {
+  z-index: 82;
+  rotate: -72deg;
+}
+
+.listMyCards li:nth-child(83) {
+  z-index: 83;
+  rotate: 73deg;
+}
+
+.listOppCards li:nth-child(83) {
+  z-index: 83;
+  rotate: -73deg;
+}
+
+.listMyCards li:nth-child(84) {
+  z-index: 84;
+  rotate: 74deg;
+}
+
+.listOppCards li:nth-child(84) {
+  z-index: 84;
+  rotate: -74deg;
+}
+
+.listMyCards li:nth-child(85) {
+  z-index: 85;
+  rotate: 75deg;
+}
+
+.listOppCards li:nth-child(85) {
+  z-index: 85;
+  rotate: -75deg;
+}
+
+.listMyCards li:nth-child(86) {
+  z-index: 86;
+  rotate: 76deg;
+}
+
+.listOppCards li:nth-child(86) {
+  z-index: 86;
+  rotate: -76deg;
+}
+
+.listMyCards li:nth-child(87) {
+  z-index: 87;
+  rotate: 77deg;
+}
+
+.listOppCards li:nth-child(87) {
+  z-index: 87;
+  rotate: -77deg;
+}
+
+.listMyCards li:nth-child(88) {
+  z-index: 88;
+  rotate: 78deg;
+}
+
+.listOppCards li:nth-child(88) {
+  z-index: 88;
+  rotate: -78deg;
+}
+
+.listMyCards li:nth-child(89) {
+  z-index: 89;
+  rotate: 79deg;
+}
+
+.listOppCards li:nth-child(89) {
+  z-index: 89;
+  rotate: -79deg;
+}
+
+.listMyCards li:nth-child(90) {
+  z-index: 90;
+  rotate: 80deg;
+}
+
+.listOppCards li:nth-child(90) {
+  z-index: 90;
+  rotate: -80deg;
+}
+
+.listMyCards li:nth-child(91) {
+  z-index: 91;
+  rotate: 81deg;
+}
+
+.listOppCards li:nth-child(91) {
+  z-index: 91;
+  rotate: -81deg;
+}
+
+.listMyCards li:nth-child(92) {
+  z-index: 92;
+  rotate: 82deg;
+}
+
+.listOppCards li:nth-child(92) {
+  z-index: 92;
+  rotate: -82deg;
+}
+
+.listMyCards li:nth-child(93) {
+  z-index: 93;
+  rotate: 83deg;
+}
+
+.listOppCards li:nth-child(93) {
+  z-index: 93;
+  rotate: -83deg;
+}
+
+.listMyCards li:nth-child(94) {
+  z-index: 94;
+  rotate: 84deg;
+}
+
+.listOppCards li:nth-child(94) {
+  z-index: 94;
+  rotate: -84deg;
+}
+
+.listMyCards li:nth-child(95) {
+  z-index: 95;
+  rotate: 85deg;
+}
+
+.listOppCards li:nth-child(95) {
+  z-index: 95;
+  rotate: -85deg;
+}
+
+.listMyCards li:nth-child(96) {
+  z-index: 96;
+  rotate: 86deg;
+}
+
+.listOppCards li:nth-child(96) {
+  z-index: 96;
+  rotate: -86deg;
+}
+
+.listMyCards li:nth-child(97) {
+  z-index: 97;
+  rotate: 87deg;
+}
+
+.listOppCards li:nth-child(97) {
+  z-index: 97;
+  rotate: -87deg;
+}
+
+.listMyCards li:nth-child(98) {
+  z-index: 98;
+  rotate: 88deg;
+}
+
+.listOppCards li:nth-child(98) {
+  z-index: 98;
+  rotate: -88deg;
+}
+
+.listMyCards li:nth-child(99) {
+  z-index: 99;
+  rotate: 89deg;
+}
+
+.listOppCards li:nth-child(99) {
+  z-index: 99;
+  rotate: -89deg;
+}
+
+.listMyCards li:nth-child(100) {
+  z-index: 100;
+  rotate: 90deg;
+}
+
+.listOppCards li:nth-child(100) {
+  z-index: 100;
+  rotate: -90deg;
+}
+
+.listSetColor li:nth-child(1) {
+  z-index: 1;
+  rotate: -20deg;
+}
+
+.listSetColor li:nth-child(2) {
+  z-index: 2;
+  rotate: -10deg;
+}
+
+.listSetColor li:nth-child(3) {
+  z-index: 3;
+  rotate: 0deg;
+}
+
+.listSetColor li:nth-child(4) {
+  z-index: 4;
+  rotate: 10deg;
+}
+
+.listCardDeck li:nth-child(1) {
+  z-index: 1;
+  top: 0.01px;
+}
+
+.listCardDeck li:nth-child(2) {
+  z-index: 2;
+  top: -0.07px;
+}
+
+.listCardDeck li:nth-child(3) {
+  z-index: 3;
+  top: -0.15px;
+}
+
+.listCardDeck li:nth-child(4) {
+  z-index: 4;
+  top: -0.23px;
+}
+
+.listCardDeck li:nth-child(5) {
+  z-index: 5;
+  top: -0.31px;
+}
+
+.listCardDeck li:nth-child(6) {
+  z-index: 6;
+  top: -0.39px;
+}
+
+.listCardDeck li:nth-child(7) {
+  z-index: 7;
+  top: -0.47px;
+}
+
+.listCardDeck li:nth-child(8) {
+  z-index: 8;
+  top: -0.55px;
+}
+
+.listCardDeck li:nth-child(9) {
+  z-index: 9;
+  top: -0.63px;
+}
+
+.listCardDeck li:nth-child(10) {
+  z-index: 10;
+  top: -0.71px;
+}
+
+.listCardDeck li:nth-child(11) {
+  z-index: 11;
+  top: -0.79px;
+}
+
+.listCardDeck li:nth-child(12) {
+  z-index: 12;
+  top: -0.87px;
+}
+
+.listCardDeck li:nth-child(13) {
+  z-index: 13;
+  top: -0.95px;
+}
+
+.listCardDeck li:nth-child(14) {
+  z-index: 14;
+  top: -1.03px;
+}
+
+.listCardDeck li:nth-child(15) {
+  z-index: 15;
+  top: -1.11px;
+}
+
+.listCardDeck li:nth-child(16) {
+  z-index: 16;
+  top: -1.19px;
+}
+
+.listCardDeck li:nth-child(17) {
+  z-index: 17;
+  top: -1.27px;
+}
+
+.listCardDeck li:nth-child(18) {
+  z-index: 18;
+  top: -1.35px;
+}
+
+.listCardDeck li:nth-child(19) {
+  z-index: 19;
+  top: -1.43px;
+}
+
+.listCardDeck li:nth-child(20) {
+  z-index: 20;
+  top: -1.51px;
+}
+
+.listCardDeck li:nth-child(21) {
+  z-index: 21;
+  top: -1.59px;
+}
+
+.listCardDeck li:nth-child(22) {
+  z-index: 22;
+  top: -1.67px;
+}
+
+.listCardDeck li:nth-child(23) {
+  z-index: 23;
+  top: -1.75px;
+}
+
+.listCardDeck li:nth-child(24) {
+  z-index: 24;
+  top: -1.83px;
+}
+
+.listCardDeck li:nth-child(25) {
+  z-index: 25;
+  top: -1.91px;
+}
+
+.listCardDeck li:nth-child(26) {
+  z-index: 26;
+  top: -1.99px;
+}
+
+.listCardDeck li:nth-child(27) {
+  z-index: 27;
+  top: -2.07px;
+}
+
+.listCardDeck li:nth-child(28) {
+  z-index: 28;
+  top: -2.15px;
+}
+
+.listCardDeck li:nth-child(29) {
+  z-index: 29;
+  top: -2.23px;
+}
+
+.listCardDeck li:nth-child(30) {
+  z-index: 30;
+  top: -2.31px;
+}
+
+.listCardDeck li:nth-child(31) {
+  z-index: 31;
+  top: -2.39px;
+}
+
+.listCardDeck li:nth-child(32) {
+  z-index: 32;
+  top: -2.47px;
+}
+
+.listCardDeck li:nth-child(33) {
+  z-index: 33;
+  top: -2.55px;
+}
+
+.listCardDeck li:nth-child(34) {
+  z-index: 34;
+  top: -2.63px;
+}
+
+.listCardDeck li:nth-child(35) {
+  z-index: 35;
+  top: -2.71px;
+}
+
+.listCardDeck li:nth-child(36) {
+  z-index: 36;
+  top: -2.79px;
+}
+
+.listCardDeck li:nth-child(37) {
+  z-index: 37;
+  top: -2.87px;
+}
+
+.listCardDeck li:nth-child(38) {
+  z-index: 38;
+  top: -2.95px;
+}
+
+.listCardDeck li:nth-child(39) {
+  z-index: 39;
+  top: -3.03px;
+}
+
+.listCardDeck li:nth-child(40) {
+  z-index: 40;
+  top: -3.11px;
+}
+
+.listCardDeck li:nth-child(41) {
+  z-index: 41;
+  top: -3.19px;
+}
+
+.listCardDeck li:nth-child(42) {
+  z-index: 42;
+  top: -3.27px;
+}
+
+.listCardDeck li:nth-child(43) {
+  z-index: 43;
+  top: -3.35px;
+}
+
+.listCardDeck li:nth-child(44) {
+  z-index: 44;
+  top: -3.43px;
+}
+
+.listCardDeck li:nth-child(45) {
+  z-index: 45;
+  top: -3.51px;
+}
+
+.listCardDeck li:nth-child(46) {
+  z-index: 46;
+  top: -3.59px;
+}
+
+.listCardDeck li:nth-child(47) {
+  z-index: 47;
+  top: -3.67px;
+}
+
+.listCardDeck li:nth-child(48) {
+  z-index: 48;
+  top: -3.75px;
+}
+
+.listCardDeck li:nth-child(49) {
+  z-index: 49;
+  top: -3.83px;
+}
+
+.listCardDeck li:nth-child(50) {
+  z-index: 50;
+  top: -3.91px;
+}
+
+.listCardDeck li:nth-child(51) {
+  z-index: 51;
+  top: -3.99px;
+}
+
+.listCardDeck li:nth-child(52) {
+  z-index: 52;
+  top: -4.07px;
+}
+
+.listCardDeck li:nth-child(53) {
+  z-index: 53;
+  top: -4.15px;
+}
+
+.listCardDeck li:nth-child(54) {
+  z-index: 54;
+  top: -4.23px;
+}
+
+.listCardDeck li:nth-child(55) {
+  z-index: 55;
+  top: -4.31px;
+}
+
+.listCardDeck li:nth-child(56) {
+  z-index: 56;
+  top: -4.39px;
+}
+
+.listCardDeck li:nth-child(57) {
+  z-index: 57;
+  top: -4.47px;
+}
+
+.listCardDeck li:nth-child(58) {
+  z-index: 58;
+  top: -4.55px;
+}
+
+.listCardDeck li:nth-child(59) {
+  z-index: 59;
+  top: -4.63px;
+}
+
+.listCardDeck li:nth-child(60) {
+  z-index: 60;
+  top: -4.71px;
+}
+
+.listCardDeck li:nth-child(61) {
+  z-index: 61;
+  top: -4.79px;
+}
+
+.listCardDeck li:nth-child(62) {
+  z-index: 62;
+  top: -4.87px;
+}
+
+.listCardDeck li:nth-child(63) {
+  z-index: 63;
+  top: -4.95px;
+}
+
+.listCardDeck li:nth-child(64) {
+  z-index: 64;
+  top: -5.03px;
+}
+
+.listCardDeck li:nth-child(65) {
+  z-index: 65;
+  top: -5.11px;
+}
+
+.listCardDeck li:nth-child(66) {
+  z-index: 66;
+  top: -5.19px;
+}
+
+.listCardDeck li:nth-child(67) {
+  z-index: 67;
+  top: -5.27px;
+}
+
+.listCardDeck li:nth-child(68) {
+  z-index: 68;
+  top: -5.35px;
+}
+
+.listCardDeck li:nth-child(69) {
+  z-index: 69;
+  top: -5.43px;
+}
+
+.listCardDeck li:nth-child(70) {
+  z-index: 70;
+  top: -5.51px;
+}
+
+.listCardDeck li:nth-child(71) {
+  z-index: 71;
+  top: -5.59px;
+}
+
+.listCardDeck li:nth-child(72) {
+  z-index: 72;
+  top: -5.67px;
+}
+
+.listCardDeck li:nth-child(73) {
+  z-index: 73;
+  top: -5.75px;
+}
+
+.listCardDeck li:nth-child(74) {
+  z-index: 74;
+  top: -5.83px;
+}
+
+.listCardDeck li:nth-child(75) {
+  z-index: 75;
+  top: -5.91px;
+}
+
+.listCardDeck li:nth-child(76) {
+  z-index: 76;
+  top: -5.99px;
+}
+
+.listCardDeck li:nth-child(77) {
+  z-index: 77;
+  top: -6.07px;
+}
+
+.listCardDeck li:nth-child(78) {
+  z-index: 78;
+  top: -6.15px;
+}
+
+.listCardDeck li:nth-child(79) {
+  z-index: 79;
+  top: -6.23px;
+}
+
+.listCardDeck li:nth-child(80) {
+  z-index: 80;
+  top: -6.31px;
+}
+
+.listCardDeck li:nth-child(81) {
+  z-index: 81;
+  top: -6.39px;
+}
+
+.listCardDeck li:nth-child(82) {
+  z-index: 82;
+  top: -6.47px;
+}
+
+.listCardDeck li:nth-child(83) {
+  z-index: 83;
+  top: -6.55px;
+}
+
+.listCardDeck li:nth-child(84) {
+  z-index: 84;
+  top: -6.63px;
+}
+
+.listCardDeck li:nth-child(85) {
+  z-index: 85;
+  top: -6.71px;
+}
+
+.listCardDeck li:nth-child(86) {
+  z-index: 86;
+  top: -6.79px;
+}
+
+.listCardDeck li:nth-child(87) {
+  z-index: 87;
+  top: -6.87px;
+}
+
+.listCardDeck li:nth-child(88) {
+  z-index: 88;
+  top: -6.95px;
+}
+
+.listCardDeck li:nth-child(89) {
+  z-index: 89;
+  top: -7.03px;
+}
+
+.listCardDeck li:nth-child(90) {
+  z-index: 90;
+  top: -7.11px;
+}
+
+.listCardDeck li:nth-child(91) {
+  z-index: 91;
+  top: -7.19px;
+}
+
+.listCardDeck li:nth-child(92) {
+  z-index: 92;
+  top: -7.27px;
+}
+
+.listCardDeck li:nth-child(93) {
+  z-index: 93;
+  top: -7.35px;
+}
+
+.listCardDeck li:nth-child(94) {
+  z-index: 94;
+  top: -7.43px;
+}
+
+.listCardDeck li:nth-child(95) {
+  z-index: 95;
+  top: -7.51px;
+}
+
+.listCardDeck li:nth-child(96) {
+  z-index: 96;
+  top: -7.59px;
+}
+
+.listCardDeck li:nth-child(97) {
+  z-index: 97;
+  top: -7.67px;
+}
+
+.listCardDeck li:nth-child(98) {
+  z-index: 98;
+  top: -7.75px;
+}
+
+.listCardDeck li:nth-child(99) {
+  z-index: 99;
+  top: -7.83px;
+}
+
+.listCardDeck li:nth-child(100) {
+  z-index: 100;
+  top: -7.91px;
+}
+
+.vboxCard {
+  height: calc(100% - 1px);
+  width: calc(100% - 1px);
+  border-radius: 0.9rem;
+  border: 0.5rem solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.vboxCard:after {
+  content: " ";
+  position: absolute;
+  border-radius: 0.5rem;
+  width: calc(100% - 0.8rem);
+  height: calc(100% - 0.8rem);
+  left: 0.4rem;
+  top: 0.4rem;
+}
+.vboxCard .sapMFlexItem:has(.textCardHeader),
+.vboxCard .sapMFlexItem:has(.textCardFooter) {
+  height: 1rem;
+}
+.vboxCard .sapMFlexItem:has(.textCardBody) {
+  height: 100%;
+}
+
+.textCardStyle {
+  z-index: 3;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.textCardHeader,
+.textCardFooter {
+  color: #fff !important;
+  font-size: 1rem;
+}
+
+.textCardBody {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  transform: skew(-25deg, 0deg);
+  font-style: normal;
+  width: calc(100% - 1rem);
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.textCardFooter {
+  display: flex;
+  justify-content: left;
+  rotate: 180deg;
+}
+
+.customListCardItem {
+  top: 0;
+  transition: top 0.5s;
+}
+.customListCardItem .sapMLIBContent {
+  height: 100%;
+}
+.customListCardItem:hover {
+  background: transparent;
+  top: -1.5rem;
+}
+.customListCardItem:focus {
+  outline: none;
+}
+.customListCardItem .sapMLIBActive {
+  background: transparent;
+}
+.customListCardItem.sapMLIBSelected {
+  top: -1.5rem;
+}
+.customListCardItem.sapMLIBHoverable.sapMLIBSelected:hover {
+  background-color: transparent;
+}
+
+.customListMyCardsItem.sapMLIBTypeInactive:hover,
+.customListMyCardsItem.sapMLIBTypeInactive.sapMLIBSelected {
+  top: 0 !important;
+}
+
+.customListOppCardsItem:hover, .customListOppCardsItem.sapMLIBSelected {
+  top: 0 !important;
+}
+
+.listMyCards .sapMLIBTypeInactive .textCardHeader,
+.listMyCards .sapMLIBTypeInactive .textCardFooter {
+  color: #777b7f !important;
+}
+.listMyCards .sapMLIBTypeInactive .vboxCard {
+  border-color: #777b7f;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=red].vboxCard:after {
+  background-color: #6d3331;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=red].vboxCard .textCardBody {
+  background-color: #777b7f;
+  color: #6d3331;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=blue].vboxCard:after {
+  background-color: #265271;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=blue].vboxCard .textCardBody {
+  background-color: #777b7f;
+  color: #265271;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=green].vboxCard:after {
+  background-color: #215b3f;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=green].vboxCard .textCardBody {
+  background-color: #777b7f;
+  color: #215b3f;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=yellow].vboxCard:after {
+  background-color: #71631f;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=yellow].vboxCard .textCardBody {
+  background-color: #777b7f;
+  color: #71631f;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=black].vboxCard:after {
+  background-color: #35393d;
+}
+.listMyCards .sapMLIBTypeInactive [data-color=black].vboxCard .textCardBody {
+  background-color: #777b7f;
+}
+.listMyCards .sapMLIBTypeInactive [data-value=wild].textCardStyle:after,
+.listMyCards .sapMLIBTypeInactive [data-value=wilddrawfour].textCardBody:after {
+  background: linear-gradient(to right, #6d3331 0%, #6d3331 50%, #265271 50%, #265271 100%), linear-gradient(to right, #71631f 0%, #71631f 50%, #215b3f 50%, #215b3f 100%);
+  background-size: 100% 50%;
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.listOppCards .sapMLIBTypeInactive .vboxCard {
+  border-color: #fff;
+}
+
+[data-color=blue].vboxCard:after {
+  background-color: #3498db;
+}
+[data-color=blue].vboxCard .textCardBody {
+  color: #3498db;
+}
+
+[data-color=red].vboxCard:after {
+  background-color: #e74c3c;
+}
+[data-color=red].vboxCard .textCardBody {
+  color: #e74c3c;
+}
+
+[data-color=yellow].vboxCard:after {
+  background-color: #f1c40f;
+}
+[data-color=yellow].vboxCard .textCardBody {
+  color: #f1c40f;
+}
+
+[data-color=green].vboxCard:after {
+  background-color: #27ae60;
+}
+[data-color=green].vboxCard .textCardBody {
+  color: #27ae60;
+}
+
+[data-color=black].vboxCard:after {
+  background-color: #000000;
+}
+[data-color=black].vboxCard .textCardBody {
+  color: #000000;
+}
+
+.imageBackCardBody {
+  width: 3rem;
+  height: 3rem;
+}
+
+[data-showback=false].vboxCard .imageBackCardBody {
+  display: none;
+}
+
+[data-showback=true].vboxCard:after {
+  background-color: #033d53 !important;
+}
+[data-showback=true].vboxCard .sapMFlexItem:has(.textCardHeader),
+[data-showback=true].vboxCard .sapMFlexItem:has(.textCardBody),
+[data-showback=true].vboxCard .sapMFlexItem:has(.textCardFooter) {
+  display: none;
+}
+[data-showback=true].vboxCard .imageBackCardBody {
+  display: block;
+}
+
+[data-value="6"].textCardBody,
+[data-value="9"].textCardBody {
+  text-decoration: underline;
+}
+
+[data-value=skip].textCardStyle:after {
+  content: "\e23e";
+  fill: #fff;
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: normal;
+}
+
+[data-value=reverse].textCardStyle:after {
+  content: "\e156";
+  fill: #fff;
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: normal;
+}
+
+[data-value=drawtwo].textCardHeader:after,
+[data-value=drawtwo].textCardFooter:after {
+  content: "+2";
+  fill: #fff;
+}
+
+[data-value=drawtwo].textCardBody:after {
+  content: "\e1f3";
+  fill: #fff;
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: normal;
+}
+
+[data-value=wild].textCardStyle:after {
+  content: "\e145";
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: normal;
+  background: linear-gradient(to right, #e74c3c 0%, #e74c3c 50%, #3498db 50%, #3498db 100%), linear-gradient(to right, #f1c40f 0%, #f1c40f 50%, #27ae60 50%, #27ae60 100%);
+  background-size: 100% 50%;
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-value=wilddrawfour].textCardHeader:after,
+[data-value=wilddrawfour].textCardFooter:after {
+  content: "+4";
+  fill: #fff;
+}
+
+[data-value=wilddrawfour].textCardBody:after {
+  content: "\e0bc";
+  font-family: SAP-icons;
+  font-style: normal;
+  font-weight: normal;
+  background: linear-gradient(to right, #e74c3c 0%, #e74c3c 50%, #3498db 50%, #3498db 100%), linear-gradient(to right, #f1c40f 0%, #f1c40f 50%, #27ae60 50%, #27ae60 100%);
+  background-size: 100% 50%;
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-color=red].barFooter {
+  border-color: #e74c3c;
+}
+
+[data-color=blue].barFooter {
+  border-color: #3498db;
+}
+
+[data-color=yellow].barFooter {
+  border-color: #f1c40f;
+}
+
+[data-color=green].barFooter {
+  border-color: #27ae60;
+}
+
+.barFooter {
+  border-top: 0px !important;
+  border-bottom: 10px solid #262626;
+}
+.barFooter.sapMBar,
+.barFooter .sapMBarPH,
+.barFooter .sapMBtn {
+  height: 4rem;
+  background: #262626;
+}
+.barFooter .sapMBtnInner {
+  height: 3.5rem;
+}
+.barFooter .sapMBtnInner {
+  height: 3.5rem;
+  border-radius: 1rem;
+  border: 4px solid white !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.barFooter .sapUiIcon {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  line-height: 1rem;
+}
+.barFooter .sapMBtnContent {
+  font-size: 1rem;
+}
+.barFooter.sapMIBar .sapMBarChild {
+  margin: 2px !important;
+}
+.barFooter .sapMBtnText {
+  font-size: 13px;
+}
+
+.dialogSetColor .sapMDialogSection {
+  padding: 2rem;
+}
+
+@media only screen and (min-height: 900px) and (max-height: 1139px) {
+  .listCardDeck li:not(.listCardDeck li:first-child) {
+    margin-left: -9.009rem;
+  }
+  .listMyCards,
+  .listMyCards ul,
+  .listCardDeck,
+  .listCardDeck ul {
+    height: 12rem;
+  }
+  .listMyCards li,
+  .listCardDeck li {
+    width: 9rem;
+  }
+  .vboxCard {
+    border: 1.2rem solid #fff;
+    border-radius: 0.7rem;
+  }
+  .vboxCard:after {
+    content: " ";
+    position: absolute;
+    border-radius: 0.5rem;
+    width: calc(100% - 1.4rem);
+    height: calc(100% - 1.4rem);
+    left: 0.7rem;
+    top: 0.7rem;
+  }
+  .vboxCard .sapMFlexItem:has(.textCardHeader),
+  .vboxCard .sapMFlexItem:has(.textCardFooter) {
+    height: 1.3rem;
+  }
+  .listMyCards li:not(.listMyCards li:first-child) {
+    margin-left: -7rem;
+  }
+  .imageBackCardBody {
+    width: 6rem;
+    height: 6rem;
+  }
+  .textCardBody {
+    width: calc(100% - 2rem);
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .textCardHeader,
+  .textCardFooter {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-height: 1140px) and (max-height: 1319px) {
+  .listCardDeck li:not(.listCardDeck li:first-child) {
+    margin-left: -12.009rem;
+  }
+  .listMyCards,
+  .listMyCards ul,
+  .listCardDeck,
+  .listCardDeck ul {
+    height: 16rem;
+  }
+  .listMyCards li,
+  .listCardDeck li {
+    width: 12rem;
+  }
+  .vboxCard {
+    border: 1.5rem solid #fff;
+    border-radius: 1.5rem;
+  }
+  .vboxCard:after {
+    content: " ";
+    position: absolute;
+    border-radius: 1rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    left: 1rem;
+    top: 1rem;
+  }
+  .vboxCard .sapMFlexItem:has(.textCardHeader),
+  .vboxCard .sapMFlexItem:has(.textCardFooter) {
+    height: 2rem;
+  }
+  .listMyCards li:not(.listMyCards li:first-child) {
+    margin-left: -9rem;
+  }
+  .imageBackCardBody {
+    width: 6rem;
+    height: 6rem;
+  }
+  .textCardBody {
+    width: calc(100% - 4rem);
+    font-size: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .textCardHeader,
+  .textCardFooter {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-height: 1320px) {
+  .listCardDeck li:not(.listCardDeck li:first-child) {
+    margin-left: -15.009rem;
+  }
+  .listMyCards,
+  .listMyCards ul,
+  .listCardDeck,
+  .listCardDeck ul {
+    height: 20rem;
+  }
+  .listMyCards li,
+  .listCardDeck li {
+    width: 15rem;
+  }
+  .vboxCard {
+    border: 1.5rem solid #fff;
+    border-radius: 1.5rem;
+  }
+  .vboxCard:after {
+    content: " ";
+    position: absolute;
+    border-radius: 1rem;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    left: 1rem;
+    top: 1rem;
+  }
+  .vboxCard .sapMFlexItem:has(.textCardHeader),
+  .vboxCard .sapMFlexItem:has(.textCardFooter) {
+    height: 2rem;
+  }
+  .listMyCards li:not(.listMyCards li:first-child) {
+    margin-left: -12rem;
+  }
+  .imageBackCardBody {
+    width: 9rem;
+    height: 9rem;
+  }
+  .textCardBody {
+    width: calc(100% - 4rem);
+    font-size: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .textCardHeader,
+  .textCardFooter {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 900px) {
+  .vboxGameTable {
+    border: 2rem solid #262626;
+  }
+  .hboxCenterGameTable {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .customListCardItem:hover, .customListCardItem.sapMLIBSelected {
+    top: -3rem;
+  }
+  .customListOppCardsItem:hover, .customListOppCardsItem.sapMLIBSelected {
+    top: 0 !important;
+  }
+  .dialogSetColor .sapMDialogSection {
+    padding: 5rem;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .barFooter .sapUiIcon {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 520px) {
+  .barFooter .sapUiIcon {
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    line-height: 2rem;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-height: 568px) {
+  .vboxGameTable .sapMFlexItem:has(.listMyCards) {
+    margin-bottom: -1rem;
+  }
+}

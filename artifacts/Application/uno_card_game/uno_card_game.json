@@ -1,0 +1,3104 @@
+{
+	"id": "65fba7dc-f65c-47c8-84f9-f03acd2563d8",
+	"createdAt": "2024-05-14T14:40:08.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "eb1d24a4-aa32-45b5-a0f3-12563f61c9cd",
+			"fieldName": "shell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "appWidthLimited",
+					"grouping": "Properties",
+					"value": "false",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "e91bcdfb-70b0-4022-e0a3-77538e2a224c",
+					"fieldName": "app",
+					"fieldParent": "eb1d24a4-aa32-45b5-a0f3-12563f61c9cd",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "faae7c76-b321-4e53-c226-6d0cf00bceb1",
+							"fieldName": "pageStart",
+							"fieldParent": "e91bcdfb-70b0-4022-e0a3-77538e2a224c",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "pageStyle",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "5db3dfec-a9a4-4088-f0fb-d8f423a18b4f",
+							"fieldName": "pageWaitingRoom",
+							"fieldParent": "e91bcdfb-70b0-4022-e0a3-77538e2a224c",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "pageStyle",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "911da945-da9e-4e71-ed6f-1da82d9e03e6",
+									"fieldName": "barHeaderGameTable1",
+									"fieldParent": "5db3dfec-a9a4-4088-f0fb-d8f423a18b4f",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setCustomHeader",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "8a2f2806-45e8-4df0-d066-4f58d933486b",
+											"fieldName": "right",
+											"fieldParent": "911da945-da9e-4e71-ed6f-1da82d9e03e6",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "e0a3d41a-f4c8-45a0-8b33-f4d366832758",
+													"fieldName": "btnShareRoom",
+													"fieldParent": "8a2f2806-45e8-4df0-d066-4f58d933486b",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://share-2",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnShareRoom/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "81c1938d-4409-4678-bd6f-1b4c6bea8877",
+													"fieldName": "btnExitRoom",
+													"fieldParent": "8a2f2806-45e8-4df0-d066-4f58d933486b",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://fa-solid/sign-out-alt",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnExitRoom/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "c06902ee-dfaa-437d-ea95-90b44ac38240",
+									"fieldName": "illustratedMsgWaitRoom",
+									"fieldParent": "5db3dfec-a9a4-4088-f0fb-d8f423a18b4f",
+									"fieldType": "sap.m.IllustratedMessage",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "description",
+											"grouping": "Properties",
+											"value": "Share the link room to your friend!",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "illustrationType",
+											"grouping": "Properties",
+											"value": "sapIllus-AddPeople",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "Waiting room",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "626e657d-9f24-4e79-fd1c-8886f9300d2c",
+							"fieldName": "pageGameTable",
+							"fieldParent": "e91bcdfb-70b0-4022-e0a3-77538e2a224c",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "pageStyle",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "384769e2-4aff-4c9e-9123-6f228db6e1c4",
+									"fieldName": "barHeaderGameTable",
+									"fieldParent": "626e657d-9f24-4e79-fd1c-8886f9300d2c",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setCustomHeader",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "5fdd6e84-3099-4557-83e6-bec994bbe1cf",
+											"fieldName": "left",
+											"fieldParent": "384769e2-4aff-4c9e-9123-6f228db6e1c4",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentLeft",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "ff36ade0-9677-4617-abd5-bc3a69b5a10c",
+													"fieldName": "objAttrRoomId",
+													"fieldParent": "5fdd6e84-3099-4557-83e6-bec994bbe1cf",
+													"fieldType": "sap.m.ObjectAttribute",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Room",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "86a8aabd-5cb0-47bd-c12d-e88a62fda90a",
+											"fieldName": "right",
+											"fieldParent": "384769e2-4aff-4c9e-9123-6f228db6e1c4",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "dc99e55a-5873-4ea5-841d-299c940c8bef",
+													"fieldName": "btnExitGameRoom",
+													"fieldParent": "86a8aabd-5cb0-47bd-c12d-e88a62fda90a",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://fa-solid/sign-out-alt",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnExitGameRoom/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "63c0e609-3e69-4aed-eaad-25910e52955a",
+									"fieldName": "vboxGameTable",
+									"fieldParent": "626e657d-9f24-4e79-fd1c-8886f9300d2c",
+									"fieldType": "sap.m.VBox",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "vboxGameTable",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "f10fdeb1-5b8d-452d-fde1-1848bba8e4fa",
+											"fieldName": "listOppCards",
+											"fieldParent": "63c0e609-3e69-4aed-eaad-25910e52955a",
+											"fieldType": "sap.m.List",
+											"script": "",
+											"customComponent": false,
+											"bindingValue": "Generic Array",
+											"bindingType": "h",
+											"bindingSource": "P9",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "listMyCards listOppCards",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "showNoData",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "9ec76936-5ef5-47c4-9e0a-e39a6323d994",
+													"fieldName": "customListOppCardsItem",
+													"fieldParent": "f10fdeb1-5b8d-452d-fde1-1848bba8e4fa",
+													"fieldType": "sap.m.CustomListItem",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Inactive",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "customListCardItem customListOppCardsItem",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "012f8b3c-9f01-4444-f760-db8e9951eaec",
+															"fieldName": "vboxOppCards",
+															"fieldParent": "9ec76936-5ef5-47c4-9e0a-e39a6323d994",
+															"fieldType": "sap.m.VBox",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "visible",
+																	"grouping": "Properties",
+																	"value": "{showBack},{color}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClassMargin",
+																	"grouping": "Properties",
+																	"value": "sapUiSmallMarginEnd",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "vboxCard",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "visible",
+																	"grouping": "Formatter",
+																	"value": "Anonymous Function",
+																	"script": "file://event/sap.m.VBox/vboxOppCards/visible.script",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "8dc46382-2546-4edc-e0dc-2b35b45c8d81",
+																	"fieldName": "imageBackOppCardsBody",
+																	"fieldParent": "012f8b3c-9f01-4444-f760-db8e9951eaec",
+																	"fieldType": "sap.m.Image",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "visible",
+																			"grouping": "Properties",
+																			"value": "{showBack}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "imageBackCardBody",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "src",
+																			"grouping": "Properties",
+																			"value": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMTIiIGhlaWdodD0iMjEyIiB2aWV3Qm94PSIwIDAgNjAuNjIgNjAuNjkiPjxkZWZzPjxzdHlsZT4ubmVwU1ZHTG9nb1Jpbmd7ZmlsbDp0cmFuc3BhcmVudDt9Lm5lcFNWR0xvZ29QbGFuZXR7ZmlsbDojZjZiMjIxO308L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGNsYXNzPSJuZXBTVkdMb2dvUmluZyIgY3g9IjMyLjcxIiBjeT0iMzMuOTQiIHI9IjIxLjI3Ii8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw2OC4zQTEyLjIsMTIuMiwwLDEsMSw3MS40Miw1Ni4xLDEyLjIsMTIuMiwwLDAsMSw1OS4yNCw2OC4zTTUxLjQ3LDI1YTMwLjM1LDMwLjM1LDAsMSwwLDMwLjMsMzAuMzVBMzAuMzMsMzAuMzMsMCwwLDAsNTEuNDcsMjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4xNiAtMjQuOTgpIi8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw0Ni4wNUExMC4wNiwxMC4wNiwwLDEsMCw2OS4yOSw1Ni4xLDEwLjA2LDEwLjA2LDAsMCwwLDU5LjI0LDQ2LjA1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjEuMTYgLTI0Ljk4KSIvPjwvc3ZnPg==",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "e711425a-2a42-46d9-9eae-da66d852fe4c",
+																	"fieldName": "textOppCardsHeader",
+																	"fieldParent": "012f8b3c-9f01-4444-f760-db8e9951eaec",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{value}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textCardStyle textCardHeader",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Text/textOppCardsHeader/text.script",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "111a5b5a-f0ba-4764-9830-b392f1263be8",
+																	"fieldName": "textOppCardsBody",
+																	"fieldParent": "012f8b3c-9f01-4444-f760-db8e9951eaec",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{value}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textCardStyle textCardBody",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Text/textOppCardsBody/text.script",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "07865f3e-8bfc-4a08-9d29-61eff8c0637e",
+																	"fieldName": "textOppCardsFooter",
+																	"fieldParent": "012f8b3c-9f01-4444-f760-db8e9951eaec",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{value}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textCardStyle textCardFooter",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Text/textOppCardsFooter/text.script",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"fieldNo": "1c42c300-d4b1-4349-cec7-a3e81bf415da",
+											"fieldName": "vboxCenterGameTable",
+											"fieldParent": "63c0e609-3e69-4aed-eaad-25910e52955a",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "vboxCenterGameTable",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "6bf6b0f6-a5b8-490f-c9f3-1f1ceedb73fa",
+													"fieldName": "hboxCenterGameTable",
+													"fieldParent": "1c42c300-d4b1-4349-cec7-a3e81bf415da",
+													"fieldType": "sap.m.HBox",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "hboxCenterGameTable",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "0aa05e29-e2ab-4291-adc3-6af9cb5da2aa",
+															"fieldName": "listCardDeck",
+															"fieldParent": "6bf6b0f6-a5b8-490f-c9f3-1f1ceedb73fa",
+															"fieldType": "sap.m.List",
+															"script": "",
+															"customComponent": false,
+															"bindingValue": "Generic Array",
+															"bindingType": "h",
+															"bindingSource": "P9",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "listCardDeck",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "showNoData",
+																	"grouping": "Properties",
+																	"value": "false",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "56f301e2-e52f-4afa-bd86-5e1033a136ec",
+																	"fieldName": "customListCardDeckItem",
+																	"fieldParent": "0aa05e29-e2ab-4291-adc3-6af9cb5da2aa",
+																	"fieldType": "sap.m.CustomListItem",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "type",
+																			"grouping": "Properties",
+																			"value": "{value}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "customListCardItem",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "press",
+																			"grouping": "Events",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.CustomListItem/customListCardDeckItem/press.js",
+																			"language": "javascript",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "type",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.CustomListItem/customListCardDeckItem/type.script",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "caf2540d-ed7b-45e5-d87b-0fbe46925b28",
+																			"fieldName": "vboxCardDeck",
+																			"fieldParent": "56f301e2-e52f-4afa-bd86-5e1033a136ec",
+																			"fieldType": "sap.m.VBox",
+																			"script": "",
+																			"customComponent": false,
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "visible",
+																					"grouping": "Properties",
+																					"value": "{showBack},{color}",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClassMargin",
+																					"grouping": "Properties",
+																					"value": "sapUiSmallMarginEnd",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClass",
+																					"grouping": "Properties",
+																					"value": "vboxCard",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "visible",
+																					"grouping": "Formatter",
+																					"value": "Anonymous Function",
+																					"script": "file://event/sap.m.VBox/vboxCardDeck/visible.script",
+																					"translation": []
+																				}
+																			],
+																			"data": [
+																				{
+																					"fieldNo": "6e4b24cc-2aed-4adb-9cf6-7b9ac5aaf2aa",
+																					"fieldName": "imageBackCardDeckBody",
+																					"fieldParent": "caf2540d-ed7b-45e5-d87b-0fbe46925b28",
+																					"fieldType": "sap.m.Image",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "visible",
+																							"grouping": "Properties",
+																							"value": "{showBack}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "imageBackCardBody",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "src",
+																							"grouping": "Properties",
+																							"value": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMTIiIGhlaWdodD0iMjEyIiB2aWV3Qm94PSIwIDAgNjAuNjIgNjAuNjkiPjxkZWZzPjxzdHlsZT4ubmVwU1ZHTG9nb1Jpbmd7ZmlsbDp0cmFuc3BhcmVudDt9Lm5lcFNWR0xvZ29QbGFuZXR7ZmlsbDojZjZiMjIxO308L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGNsYXNzPSJuZXBTVkdMb2dvUmluZyIgY3g9IjMyLjcxIiBjeT0iMzMuOTQiIHI9IjIxLjI3Ii8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw2OC4zQTEyLjIsMTIuMiwwLDEsMSw3MS40Miw1Ni4xLDEyLjIsMTIuMiwwLDAsMSw1OS4yNCw2OC4zTTUxLjQ3LDI1YTMwLjM1LDMwLjM1LDAsMSwwLDMwLjMsMzAuMzVBMzAuMzMsMzAuMzMsMCwwLDAsNTEuNDcsMjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4xNiAtMjQuOTgpIi8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw0Ni4wNUExMC4wNiwxMC4wNiwwLDEsMCw2OS4yOSw1Ni4xLDEwLjA2LDEwLjA2LDAsMCwwLDU5LjI0LDQ2LjA1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjEuMTYgLTI0Ljk4KSIvPjwvc3ZnPg==",
+																							"script": "",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "5620e083-01d5-4c5b-bec8-95ba7397088c",
+																					"fieldName": "textCardDeckHeader",
+																					"fieldParent": "caf2540d-ed7b-45e5-d87b-0fbe46925b28",
+																					"fieldType": "sap.m.Text",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{value}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "textCardStyle textCardHeader",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textCardDeckHeader/text.script",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "1f73bd53-1b4b-433f-82d1-247593bea1d3",
+																					"fieldName": "textCardDeckBody",
+																					"fieldParent": "caf2540d-ed7b-45e5-d87b-0fbe46925b28",
+																					"fieldType": "sap.m.Text",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{value}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "textCardStyle textCardBody",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textCardDeckBody/text.script",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "a61f02c3-37d0-4717-f7da-3565a4e1c251",
+																					"fieldName": "textCardDeckFooter",
+																					"fieldParent": "caf2540d-ed7b-45e5-d87b-0fbe46925b28",
+																					"fieldType": "sap.m.Text",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{value}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "textCardStyle textCardFooter",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textCardDeckFooter/text.script",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"fieldNo": "be23b523-47ba-408a-aa53-bb7c97787cd2",
+															"fieldName": "listCardPile",
+															"fieldParent": "6bf6b0f6-a5b8-490f-c9f3-1f1ceedb73fa",
+															"fieldType": "sap.m.List",
+															"script": "",
+															"customComponent": false,
+															"bindingValue": "Generic Array",
+															"bindingType": "h",
+															"bindingSource": "P9",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "styleClassMargin",
+																	"grouping": "Properties",
+																	"value": "sapUiSmallMarginBegin",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "listCardDeck",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "showNoData",
+																	"grouping": "Properties",
+																	"value": "false",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "75e617fd-07cd-42d6-c027-d8e9a4379310",
+																	"fieldName": "customListCardPileItem",
+																	"fieldParent": "be23b523-47ba-408a-aa53-bb7c97787cd2",
+																	"fieldType": "sap.m.CustomListItem",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "type",
+																			"grouping": "Properties",
+																			"value": "Inactive",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "customListCardItem",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": [
+																		{
+																			"fieldNo": "8ed4d655-cfa1-45a1-a6ae-b77b0ec3939b",
+																			"fieldName": "vboxCardPile",
+																			"fieldParent": "75e617fd-07cd-42d6-c027-d8e9a4379310",
+																			"fieldType": "sap.m.VBox",
+																			"script": "",
+																			"customComponent": false,
+																			"request": [],
+																			"response": [],
+																			"attributes": [
+																				{
+																					"attribute": "visible",
+																					"grouping": "Properties",
+																					"value": "{showBack},{color}",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClassMargin",
+																					"grouping": "Properties",
+																					"value": "sapUiSmallMarginEnd",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "styleClass",
+																					"grouping": "Properties",
+																					"value": "vboxCard",
+																					"script": "",
+																					"translation": []
+																				},
+																				{
+																					"attribute": "visible",
+																					"grouping": "Formatter",
+																					"value": "Anonymous Function",
+																					"script": "file://event/sap.m.VBox/vboxCardPile/visible.script",
+																					"translation": []
+																				}
+																			],
+																			"data": [
+																				{
+																					"fieldNo": "4823eda7-eb6d-47cd-f7b6-16d33af6a047",
+																					"fieldName": "imageBackCardPileBody",
+																					"fieldParent": "8ed4d655-cfa1-45a1-a6ae-b77b0ec3939b",
+																					"fieldType": "sap.m.Image",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "visible",
+																							"grouping": "Properties",
+																							"value": "{showBack}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "imageBackCardBody",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "src",
+																							"grouping": "Properties",
+																							"value": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMTIiIGhlaWdodD0iMjEyIiB2aWV3Qm94PSIwIDAgNjAuNjIgNjAuNjkiPjxkZWZzPjxzdHlsZT4ubmVwU1ZHTG9nb1Jpbmd7ZmlsbDp0cmFuc3BhcmVudDt9Lm5lcFNWR0xvZ29QbGFuZXR7ZmlsbDojZjZiMjIxO308L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGNsYXNzPSJuZXBTVkdMb2dvUmluZyIgY3g9IjMyLjcxIiBjeT0iMzMuOTQiIHI9IjIxLjI3Ii8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw2OC4zQTEyLjIsMTIuMiwwLDEsMSw3MS40Miw1Ni4xLDEyLjIsMTIuMiwwLDAsMSw1OS4yNCw2OC4zTTUxLjQ3LDI1YTMwLjM1LDMwLjM1LDAsMSwwLDMwLjMsMzAuMzVBMzAuMzMsMzAuMzMsMCwwLDAsNTEuNDcsMjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4xNiAtMjQuOTgpIi8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw0Ni4wNUExMC4wNiwxMC4wNiwwLDEsMCw2OS4yOSw1Ni4xLDEwLjA2LDEwLjA2LDAsMCwwLDU5LjI0LDQ2LjA1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjEuMTYgLTI0Ljk4KSIvPjwvc3ZnPg==",
+																							"script": "",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "ee648bfd-c58c-41e4-a012-8e0f1360f6b6",
+																					"fieldName": "textCardPileHeader",
+																					"fieldParent": "8ed4d655-cfa1-45a1-a6ae-b77b0ec3939b",
+																					"fieldType": "sap.m.Text",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{value}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "textCardStyle textCardHeader",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textCardPileHeader/text.script",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "4d208524-b8ad-4814-a259-7e3411d4d171",
+																					"fieldName": "textCardPileBody",
+																					"fieldParent": "8ed4d655-cfa1-45a1-a6ae-b77b0ec3939b",
+																					"fieldType": "sap.m.Text",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{value}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "textCardStyle textCardBody",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textCardPileBody/text.script",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				},
+																				{
+																					"fieldNo": "7116d993-2cff-4151-a53c-942a9fe82989",
+																					"fieldName": "textCardPileFooter",
+																					"fieldParent": "8ed4d655-cfa1-45a1-a6ae-b77b0ec3939b",
+																					"fieldType": "sap.m.Text",
+																					"script": "",
+																					"customComponent": false,
+																					"request": [],
+																					"response": [],
+																					"attributes": [
+																						{
+																							"attribute": "text",
+																							"grouping": "Properties",
+																							"value": "{value}",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "textCardStyle textCardFooter",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textCardPileFooter/text.script",
+																							"translation": []
+																						}
+																					],
+																					"data": []
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"fieldNo": "b256a430-9a33-49e4-95b6-92a8845490fc",
+											"fieldName": "listMyCards",
+											"fieldParent": "63c0e609-3e69-4aed-eaad-25910e52955a",
+											"fieldType": "sap.m.List",
+											"script": "",
+											"customComponent": false,
+											"bindingValue": "Generic Array",
+											"bindingType": "h",
+											"bindingSource": "P9",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "listMyCards",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "showNoData",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "mode",
+													"grouping": "Properties",
+													"value": "SingleSelectMaster",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "itemPress",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.List/listMyCards/itemPress.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "d0814bc3-6c25-487d-f1c3-2006f625fa61",
+													"fieldName": "customListMyCardsItem",
+													"fieldParent": "b256a430-9a33-49e4-95b6-92a8845490fc",
+													"fieldType": "sap.m.CustomListItem",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "{value},{color}",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "customListCardItem customListMyCardsItem",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "type",
+															"grouping": "Formatter",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.CustomListItem/customListMyCardsItem/type.script",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "ecb847af-2b56-4b51-da21-be5078b82df5",
+															"fieldName": "vboxMyCards",
+															"fieldParent": "d0814bc3-6c25-487d-f1c3-2006f625fa61",
+															"fieldType": "sap.m.VBox",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "visible",
+																	"grouping": "Properties",
+																	"value": "{showBack},{color}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClassMargin",
+																	"grouping": "Properties",
+																	"value": "sapUiSmallMarginEnd",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "vboxCard",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "visible",
+																	"grouping": "Formatter",
+																	"value": "Anonymous Function",
+																	"script": "file://event/sap.m.VBox/vboxMyCards/visible.script",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "23e34735-1fa0-493f-bdbc-4c71a78a1023",
+																	"fieldName": "imageBackMyCardsBody",
+																	"fieldParent": "ecb847af-2b56-4b51-da21-be5078b82df5",
+																	"fieldType": "sap.m.Image",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "visible",
+																			"grouping": "Properties",
+																			"value": "{showBack}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "imageBackCardBody",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "src",
+																			"grouping": "Properties",
+																			"value": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMTIiIGhlaWdodD0iMjEyIiB2aWV3Qm94PSIwIDAgNjAuNjIgNjAuNjkiPjxkZWZzPjxzdHlsZT4ubmVwU1ZHTG9nb1Jpbmd7ZmlsbDp0cmFuc3BhcmVudDt9Lm5lcFNWR0xvZ29QbGFuZXR7ZmlsbDojZjZiMjIxO308L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGNsYXNzPSJuZXBTVkdMb2dvUmluZyIgY3g9IjMyLjcxIiBjeT0iMzMuOTQiIHI9IjIxLjI3Ii8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw2OC4zQTEyLjIsMTIuMiwwLDEsMSw3MS40Miw1Ni4xLDEyLjIsMTIuMiwwLDAsMSw1OS4yNCw2OC4zTTUxLjQ3LDI1YTMwLjM1LDMwLjM1LDAsMSwwLDMwLjMsMzAuMzVBMzAuMzMsMzAuMzMsMCwwLDAsNTEuNDcsMjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMS4xNiAtMjQuOTgpIi8+PHBhdGggY2xhc3M9Im5lcFNWR0xvZ29QbGFuZXQiIGQ9Ik01OS4yNCw0Ni4wNUExMC4wNiwxMC4wNiwwLDEsMCw2OS4yOSw1Ni4xLDEwLjA2LDEwLjA2LDAsMCwwLDU5LjI0LDQ2LjA1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjEuMTYgLTI0Ljk4KSIvPjwvc3ZnPg==",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "f0651ae8-c941-43f7-e86c-2b1a3b1e3c8f",
+																	"fieldName": "textMyCardsHeader",
+																	"fieldParent": "ecb847af-2b56-4b51-da21-be5078b82df5",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{value}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textCardStyle textCardHeader",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Text/textMyCardsHeader/text.script",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "6bd38d74-096c-4ad8-9faf-e4f8fb9cdbb9",
+																	"fieldName": "textMyCardsBody",
+																	"fieldParent": "ecb847af-2b56-4b51-da21-be5078b82df5",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{value}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textCardStyle textCardBody",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Text/textMyCardsBody/text.script",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "5bcdcd6f-f759-432d-f924-68b77283f99b",
+																	"fieldName": "textMyCardsFooter",
+																	"fieldParent": "ecb847af-2b56-4b51-da21-be5078b82df5",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{value}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "textCardStyle textCardFooter",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "text",
+																			"grouping": "Formatter",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.m.Text/textMyCardsFooter/text.script",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "24e0aec1-8ce8-4e79-e5bc-c9e6028c3ecc",
+									"fieldName": "barFooter",
+									"fieldParent": "626e657d-9f24-4e79-fd1c-8886f9300d2c",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "barFooter",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setFooter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "ec3e9005-c132-4966-c39b-a1495332b33e",
+											"fieldName": "middle",
+											"fieldParent": "24e0aec1-8ce8-4e79-e5bc-c9e6028c3ecc",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentMiddle",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "2a991229-d53f-439e-a3ef-8e196e027231",
+													"fieldName": "btnCallUno",
+													"fieldParent": "ec3e9005-c132-4966-c39b-a1495332b33e",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "width",
+															"grouping": "Properties",
+															"value": "33%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Emphasized",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Call UNO!",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://sap-ui5",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnCallUno/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "2c46aadf-b5f9-42fc-8aab-e08227013817",
+													"fieldName": "btnSkipTurn",
+													"fieldParent": "ec3e9005-c132-4966-c39b-a1495332b33e",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "width",
+															"grouping": "Properties",
+															"value": "33%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Critical",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Skip Turn",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://media-forward",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnSkipTurn/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "3ece25bb-d77b-4bd6-e483-0f20e3676334",
+													"fieldName": "btnGetCard",
+													"fieldParent": "ec3e9005-c132-4966-c39b-a1495332b33e",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "width",
+															"grouping": "Properties",
+															"value": "33%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Success",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Get Card",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://add-coursebook",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnGetCard/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "008936ef-7b82-43d7-fe5c-16bfeb70d344",
+							"fieldName": "pageWinRoom",
+							"fieldParent": "e91bcdfb-70b0-4022-e0a3-77538e2a224c",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "pageStyle",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "3739ed0f-8e4f-4980-cb7e-2055acc5ef22",
+									"fieldName": "barHeaderWinRoom",
+									"fieldParent": "008936ef-7b82-43d7-fe5c-16bfeb70d344",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setCustomHeader",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "d647ac14-a68c-487e-e4e3-60241cbc63e9",
+											"fieldName": "right",
+											"fieldParent": "3739ed0f-8e4f-4980-cb7e-2055acc5ef22",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "24c604cb-ae06-401d-b997-1130a74281dc",
+													"fieldName": "btnExitWinRoom",
+													"fieldParent": "d647ac14-a68c-487e-e4e3-60241cbc63e9",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://fa-solid/sign-out-alt",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnExitWinRoom/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "ae0bfad9-c52f-44e5-bb2f-dc1dd41fdc3c",
+									"fieldName": "illustratedMsgWinRoom",
+									"fieldParent": "008936ef-7b82-43d7-fe5c-16bfeb70d344",
+									"fieldType": "sap.m.IllustratedMessage",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "illustrationType",
+											"grouping": "Properties",
+											"value": "sapIllus-SuccessHighFive",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "You win!",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "8056cd75-6742-46bb-ed38-26c79e2ad5da",
+									"fieldName": "hboxWinPlayAgain",
+									"fieldParent": "008936ef-7b82-43d7-fe5c-16bfeb70d344",
+									"fieldType": "sap.m.HBox",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "width",
+											"grouping": "Properties",
+											"value": "100%",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "justifyContent",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "479f8351-d842-4aed-9e39-1fc295e96ffb",
+											"fieldName": "btnWinPlayAgain",
+											"fieldParent": "8056cd75-6742-46bb-ed38-26c79e2ad5da",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Emphasized",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Play Again",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-regular/play-circle",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/btnWinPlayAgain/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "f7530e24-5264-480f-c1d8-4c0f3599c662",
+							"fieldName": "pageLoseRoom",
+							"fieldParent": "e91bcdfb-70b0-4022-e0a3-77538e2a224c",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "pageStyle",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "079b8d35-dec2-4293-8303-73b8dc8ef50e",
+									"fieldName": "barHeaderLoseRoom",
+									"fieldParent": "f7530e24-5264-480f-c1d8-4c0f3599c662",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setCustomHeader",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "7c215b26-ae1d-47ec-9dd7-3d1395447419",
+											"fieldName": "right",
+											"fieldParent": "079b8d35-dec2-4293-8303-73b8dc8ef50e",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "82f5f311-9e01-44fa-cb48-e7f3f4b0379d",
+													"fieldName": "btnExitLoseRoom",
+													"fieldParent": "7c215b26-ae1d-47ec-9dd7-3d1395447419",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://fa-solid/sign-out-alt",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.Button/btnExitLoseRoom/press.js",
+															"language": "javascript",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "3d832b84-9b7f-47f3-d261-5d226e91102b",
+									"fieldName": "illustratedMsgLoseRoom",
+									"fieldParent": "f7530e24-5264-480f-c1d8-4c0f3599c662",
+									"fieldType": "sap.m.IllustratedMessage",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "illustrationType",
+											"grouping": "Properties",
+											"value": "sapIllus-SimpleError",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "You lose!",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "3e1dc3e1-36e4-4ba2-cc68-28d710e31089",
+									"fieldName": "hboxLosePlayAgain",
+									"fieldParent": "f7530e24-5264-480f-c1d8-4c0f3599c662",
+									"fieldType": "sap.m.HBox",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "width",
+											"grouping": "Properties",
+											"value": "100%",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "justifyContent",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "eadbb7fa-83ca-4689-dd53-b4d90b2e6106",
+											"fieldName": "btnLosePlayAgain",
+											"fieldParent": "3e1dc3e1-36e4-4ba2-cc68-28d710e31089",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Emphasized",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Play Again",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-regular/play-circle",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/btnLosePlayAgain/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "558df44f-0ab3-4e21-e656-deeb15146a41",
+					"fieldName": "Redis",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "d63979a8-01e8-453e-b2fd-00e06fdd4cb8",
+							"fieldName": "RedisSocket",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Socket",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "disconnect",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.events.Socket/RedisSocket/disconnect.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "d3a9a0a3-3c55-4c4c-b74a-7a5b93f9bbe7",
+							"fieldName": "UserLoggedTrigger",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Trigger",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "userLogged",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "23ed540c-2bc8-48bc-8bc8-16bd32d9c9fe",
+							"fieldName": "UserLoggedListener",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Listener",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "userLogged",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "action",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.events.Listener/UserLoggedListener/action.script",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "83bc7711-60cc-46d6-cfa4-01b32ac327d2",
+							"fieldName": "SendUserInfoTrigger",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Trigger",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "sendUserInfo",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "6018ad37-a92f-4f71-9f71-5c2ff7abcc75",
+							"fieldName": "SendUserInfoListener",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Listener",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "sendUserInfo",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "action",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.events.Listener/SendUserInfoListener/action.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "bfa993dc-5510-42b9-c0b7-3c1e465546b9",
+							"fieldName": "UserLeftTrigger",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Trigger",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "userLeft",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "e743e8f2-716f-4552-ec38-ae703bc2c08b",
+							"fieldName": "UserLeftListener",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Listener",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "userLeft",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "action",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.events.Listener/UserLeftListener/action.script",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "e2b964ec-907a-4fda-a55d-9cad2c4bba30",
+							"fieldName": "UpdateCardsTrigger",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Trigger",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "updateCards",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "d5df9117-a120-4d5a-9555-4ec64aab0758",
+							"fieldName": "UpdateCardsListener",
+							"fieldParent": "558df44f-0ab3-4e21-e656-deeb15146a41",
+							"fieldType": "neptune.events.Listener",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "event",
+									"grouping": "Properties",
+									"value": "updateCards",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "action",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.events.Listener/UpdateCardsListener/action.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "bd06d205-d4c1-4d93-ff92-9ca0a2c6c80c",
+					"fieldName": "Model",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "5106fd1f-4096-4354-819b-e4580877452b",
+					"fieldName": "Text",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "1e58346e-3830-41fb-febe-58c0c27c26dc",
+							"fieldName": "textUrlCopied",
+							"fieldParent": "5106fd1f-4096-4354-819b-e4580877452b",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Room URL copied to clipboard.",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "b7bb03ea-03c9-4871-f761-f775705fff20",
+							"fieldName": "textUserMissing",
+							"fieldParent": "5106fd1f-4096-4354-819b-e4580877452b",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "User name missing",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "b6db3356-11fa-4b24-9d74-2c1afea075c5",
+							"fieldName": "textRoomNameMissing",
+							"fieldParent": "5106fd1f-4096-4354-819b-e4580877452b",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Room name missing",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "43b1419c-95de-4dcc-c9f5-014789560cfc",
+							"fieldName": "textWinGame",
+							"fieldParent": "5106fd1f-4096-4354-819b-e4580877452b",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Congratulations &! Your skills and determination have paid off, and you can proudly claim victory. Well done!",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "29fbd657-ce8f-4864-f380-fdff72442f6e",
+							"fieldName": "textLoseGame",
+							"fieldParent": "5106fd1f-4096-4354-819b-e4580877452b",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Oh no! You have been defeated in the game &. Don't lose heart, though. Keep practicing and honing your skills, and you'll surely come back stronger next time. Keep pushing forward!",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "c50fba23-2f4d-4567-becc-47da993fd539",
+					"fieldName": "Dialogs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "78e5155a-6e04-412d-fddb-1f45bae1d47d",
+							"fieldName": "btnDialogJoinRoom",
+							"fieldParent": "c50fba23-2f4d-4567-becc-47da993fd539",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Emphasized",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Confirm",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Button/btnDialogJoinRoom/press.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "8510fa34-ad02-496d-b469-6d4b9c6dd7c0",
+							"fieldName": "dialogJoinRoom",
+							"fieldParent": "c50fba23-2f4d-4567-becc-47da993fd539",
+							"fieldType": "sap.m.Dialog",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Message",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Join room",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "styleClassPadding",
+									"grouping": "Properties",
+									"value": "sapUiNoContentPadding",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "dialogCreateRoom",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "beforeOpen",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Dialog/dialogJoinRoom/beforeOpen.js",
+									"language": "javascript",
+									"translation": []
+								},
+								{
+									"attribute": "beginButton",
+									"grouping": "Associations",
+									"value": "btnDialogJoinRoom",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "ac47107f-6a43-4725-92be-0d1f18f043b6",
+									"fieldName": "formJoinRoom",
+									"fieldParent": "8510fa34-ad02-496d-b469-6d4b9c6dd7c0",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "73a33383-bee5-4dff-f5b9-5a239335fd1a",
+											"fieldName": "labelUserJoin",
+											"fieldParent": "ac47107f-6a43-4725-92be-0d1f18f043b6",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "User",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f993a555-2667-4b9d-8162-27f3fc53777b",
+											"fieldName": "inputUserJoin",
+											"fieldParent": "ac47107f-6a43-4725-92be-0d1f18f043b6",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "c58a8f27-4029-4204-e2aa-174d9190f349",
+							"fieldName": "btnDialogCreateRoomConfirm",
+							"fieldParent": "c50fba23-2f4d-4567-becc-47da993fd539",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Emphasized",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Confirm",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Button/btnDialogCreateRoomConfirm/press.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "ff4d5b2f-2b0b-46a5-b221-b0064cd5ff7c",
+							"fieldName": "dialogCreateRoom",
+							"fieldParent": "c50fba23-2f4d-4567-becc-47da993fd539",
+							"fieldType": "sap.m.Dialog",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Message",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Create room",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "styleClassPadding",
+									"grouping": "Properties",
+									"value": "sapUiNoContentPadding",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "dialogCreateRoom",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "beforeOpen",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Dialog/dialogCreateRoom/beforeOpen.js",
+									"language": "javascript",
+									"translation": []
+								},
+								{
+									"attribute": "beginButton",
+									"grouping": "Associations",
+									"value": "btnDialogCreateRoomConfirm",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "fc216f8d-01e2-4659-b0ec-e4a65410c40d",
+									"fieldName": "formCreateRoom",
+									"fieldParent": "ff4d5b2f-2b0b-46a5-b221-b0064cd5ff7c",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "9cea2986-33b7-4993-84a5-ed3b9fdc14ae",
+											"fieldName": "labelRoomName",
+											"fieldParent": "fc216f8d-01e2-4659-b0ec-e4a65410c40d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Room Name",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f26750e4-03b7-4d78-d58b-648ceefbb2ce",
+											"fieldName": "inputRoomIdNew",
+											"fieldParent": "fc216f8d-01e2-4659-b0ec-e4a65410c40d",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										},
+										{
+											"fieldNo": "b94c6c85-eb8b-4690-856a-6c03ab9f328f",
+											"fieldName": "labelUser",
+											"fieldParent": "fc216f8d-01e2-4659-b0ec-e4a65410c40d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "User",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "893d1464-65d3-4ec2-d722-8e64f336eeb3",
+											"fieldName": "inputUserNew",
+											"fieldParent": "fc216f8d-01e2-4659-b0ec-e4a65410c40d",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "fdcb486c-b69f-42ea-eaef-d53bbd1c347f",
+							"fieldName": "dialogSetColor",
+							"fieldParent": "c50fba23-2f4d-4567-becc-47da993fd539",
+							"fieldType": "sap.m.Dialog",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Set new color",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "dialogSetColor",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "d461546c-c463-4def-d07a-7a8ade26a021",
+									"fieldName": "listSetColor",
+									"fieldParent": "fdcb486c-b69f-42ea-eaef-d53bbd1c347f",
+									"fieldType": "sap.m.List",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "Generic Array",
+									"bindingType": "h",
+									"bindingSource": "P9",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "listMyCards listSetColor",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "showNoData",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "mode",
+											"grouping": "Properties",
+											"value": "SingleSelectMaster",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "itemPress",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.List/listSetColor/itemPress.js",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "3edefede-2de9-4445-c37e-5e850364a7f6",
+											"fieldName": "customListSetColorItem",
+											"fieldParent": "d461546c-c463-4def-d07a-7a8ade26a021",
+											"fieldType": "sap.m.CustomListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Active",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "customListCardItem",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "1f5f77a1-dc08-40cb-d358-6ea58264109b",
+													"fieldName": "vboxSetColor",
+													"fieldParent": "3edefede-2de9-4445-c37e-5e850364a7f6",
+													"fieldType": "sap.m.VBox",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "visible",
+															"grouping": "Properties",
+															"value": "{showBack},{color}",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClassMargin",
+															"grouping": "Properties",
+															"value": "sapUiSmallMarginEnd",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "vboxCard",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "visible",
+															"grouping": "Formatter",
+															"value": "Anonymous Function",
+															"script": "file://event/sap.m.VBox/vboxSetColor/visible.script",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "aae1dc50-cdf3-4db3-af1b-c4fe092740ee",
+															"fieldName": "textSetColorHeader",
+															"fieldParent": "1f5f77a1-dc08-40cb-d358-6ea58264109b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{value}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "textCardStyle textCardHeader",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "text",
+																	"grouping": "Formatter",
+																	"value": "Anonymous Function",
+																	"script": "file://event/sap.m.Text/textSetColorHeader/text.script",
+																	"translation": []
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "26f37b46-993c-4131-b5e9-b5ccb1ee25f7",
+															"fieldName": "textSetColorBody",
+															"fieldParent": "1f5f77a1-dc08-40cb-d358-6ea58264109b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{value}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "textCardStyle textCardBody",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "text",
+																	"grouping": "Formatter",
+																	"value": "Anonymous Function",
+																	"script": "file://event/sap.m.Text/textSetColorBody/text.script",
+																	"translation": []
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "71860814-9b49-4702-cef7-0da18321df49",
+															"fieldName": "textSetColorFooter",
+															"fieldParent": "1f5f77a1-dc08-40cb-d358-6ea58264109b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{value}",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "styleClass",
+																	"grouping": "Properties",
+																	"value": "textCardStyle textCardFooter",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "text",
+																	"grouping": "Formatter",
+																	"value": "Anonymous Function",
+																	"script": "file://event/sap.m.Text/textSetColorFooter/text.script",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "3ba15056-1556-422e-fb7f-0de65c153719",
+					"fieldName": "Javascript",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "9583c602-0a7f-40a2-b5da-790c6940ec1a",
+							"fieldName": "initialize",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/initialize.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "0b225749-6a6a-45cd-f3d7-914cb8f15d1c",
+							"fieldName": "resetGame",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/resetGame.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "136d6f36-9053-4e2a-d971-13e89b074a80",
+							"fieldName": "setGameData",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/setGameData.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "3cab7597-db0d-498f-928b-dc2cfe1b426c",
+							"fieldName": "startGame",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/startGame.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "4de7b98c-6c02-4e93-b321-3af9df0a5b27",
+							"fieldName": "sendUpdatedCardsData",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/sendUpdatedCardsData.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "d1f7af32-01aa-4c84-d2a3-203245cde95b",
+							"fieldName": "updateCardData",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/updateCardData.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "8f134a9f-9b0c-4416-f0ff-bc1fe8c113de",
+							"fieldName": "getNewCard",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/getNewCard.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "6a1f73b9-8688-4441-d590-4f8954ec2a80",
+							"fieldName": "playCard",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/playCard.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "168e0a29-f7ae-49c7-83d6-6adfb196c012",
+							"fieldName": "updateInterface",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/updateInterface.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "ad638612-1243-41ef-e213-598e147427fc",
+							"fieldName": "getQueryUrlParam",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/getQueryUrlParam.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "49736c88-e37e-4e1e-cf4b-e52dfd99b633",
+							"fieldName": "copyToClipboard",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/copyToClipboard.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "4e0629b5-1e40-4b7d-9947-86a299e9aff0",
+							"fieldName": "isTouchDevice",
+							"fieldParent": "3ba15056-1556-422e-fb7f-0de65c153719",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Javascript/isTouchDevice.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "24.5.14.1640",
+	"application": "uno_card_game",
+	"title": "UNO - Card Game in Planet 9",
+	"description": "Uno Card Game Application",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon_dark",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "file:///css.css",
+	"compiledCss": "file://script/undefined/undefined.script",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [],
+	"package": "69640c21-f356-40e3-acc5-667240d45a19"
+}

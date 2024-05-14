@@ -1,0 +1,6 @@
+// based on current user turn enable/disable card deck
+let currentUserTurn = appContext.user === appContext.currentTurn;
+let customListItemType =
+    currentUserTurn && appContext.lastCardIdGetFromPile === null ? "Active" : "Inactive";
+
+return customListItemType;

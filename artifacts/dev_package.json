@@ -9,7 +9,17 @@
 	"description": "Uno Card Game - Development Package",
 	"ver": "24.5.14.1629",
 	"enableCICD": true,
-	"apps": [],
+	"apps": [
+		{
+			"id": "65fba7dc-f65c-47c8-84f9-f03acd2563d8",
+			"application": "uno_card_game",
+			"title": "UNO - Card Game in Planet 9",
+			"description": "Uno Card Game Application",
+			"package": {
+				"id": "69640c21-f356-40e3-acc5-667240d45a19"
+			}
+		}
+	],
 	"api": [],
 	"odataSource": [],
 	"odataMock": [],
@@ -68,7 +78,6 @@
 			"description": "3. Uno Card Game - Update Cards Event"
 		}
 	],
-	"media_library": [],
 	"code_snippets": [],
 	"wf_determination": [],
 	"wf_taskaction": []

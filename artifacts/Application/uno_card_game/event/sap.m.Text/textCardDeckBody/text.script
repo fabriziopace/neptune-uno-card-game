@@ -1,0 +1,15 @@
+// based on value property style the card
+let cardValue = "";
+
+if (
+    value !== "skip" &&
+    value !== "reverse" &&
+    value !== "drawtwo" &&
+    value !== "wild" &&
+    value !== "wilddrawfour"
+) {
+    cardValue = value;
+}
+
+this.data("value", value, true);
+return cardValue;

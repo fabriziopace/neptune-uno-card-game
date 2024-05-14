@@ -1,0 +1,4 @@
+// based on color / showback properties style the card
+this.data("color", color, true);
+this.data("showback", showBack.toString(), true);
+return true;

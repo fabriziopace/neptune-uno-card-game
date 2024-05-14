@@ -1,0 +1,7 @@
+let dataUserLogged = data;
+if (Object.keys(dataUserLogged).length > 0 && appContext.roomId === dataUserLogged.roomId) {
+    let roomId = appContext.roomId;
+    let user = appContext.user;
+    let isHost = appContext.isHost;
+    triggerSendUserInfoTrigger({ roomId, user, isHost });
+}

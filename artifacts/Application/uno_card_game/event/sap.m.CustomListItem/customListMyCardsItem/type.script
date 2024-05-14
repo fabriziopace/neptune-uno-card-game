@@ -1,0 +1,32 @@
+// enable / disable card based on game logics
+let cardType = "Inactive";
+if (appContext.currentTurn !== appContext.user) {
+    // when is not the user turn all cards are disabled
+    cardType = "Inactive";
+} else if (value === "wild") {
+    // wild cards can be always played
+    cardType = "Active";
+} else if (
+    (appContext.currentPlayedCard === value || appContext.currentColor === color) &&
+    color !== "black"
+) {
+    // if the number (value) or the color is the same of the pile (and is not black-action), the card is enabled
+    cardType = "Active";
+} else if (
+    (appContext.currentPlayedCard === "wild" || appContext.currentPlayedCard === "wilddrawfour") &&
+    appContext.currentColor === color
+) {
+    // if last card played is wild or wilddrawfour and the color is the same as the new selected, the card is enabled
+    cardType = "Active";
+} else if (value === "wilddrawfour") {
+    // wild draw four card can be played only if there are not other combination available
+    let findSameValue = ModelData.Find(listMyCards, "value", appContext.currentPlayedCard, "EQ");
+    let findSameColor = ModelData.Find(listMyCards, "color", appContext.currentColor, "EQ");
+    let findWild = ModelData.Find(listMyCards, "value", "wild", "EQ");
+    cardType =
+        !findSameValue.length && !findSameColor.length && !findWild.length ? "Active" : "Inactive";
+} else {
+    cardType = "Inactive";
+}
+
+return cardType;
