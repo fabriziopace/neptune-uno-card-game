@@ -5,14 +5,14 @@ UNO! Card Game built in Neptune (Open Edition) with Redis
 <img src="demo.gif" alt="UNO! Card Game Demo" width="890" height="635"/>
 
 ## Created with
-1. Neptune Software (Open Edition)
-2. OpenUI5 / JavaScript
-3. Redis
-4. SCSS
+- Neptune Software (Open Edition)
+- OpenUI5 / JavaScript
+- Redis
+- SCSS
 
 ## Prerequisites
-1. Planet 9 (Open Edition DXP 23 or higher)
-2. Redis installed / configured in the cockpit settings (you can follow my <a href='https://community.neptune-software.com/topics/tips--tricks/blogs/getting-started-with--redis-and--planet--9' target="_blank">Getting Started</a>)
+- Planet 9 (Open Edition DXP 23 or higher)
+- Redis installed / configured in the cockpit settings (you can follow my <a href='https://community.neptune-software.com/topics/tips--tricks/blogs/getting-started-with--redis-and--planet--9' target="_blank">Getting Started</a>)
 
 ## Installation
 1. Open your Planet 9 instance and go inside the Development Package section
@@ -23,5 +23,5 @@ UNO! Card Game built in Neptune (Open Edition) with Redis
 6. Have fun!
 
 More details on my blog:
-- https://community.neptune-software.com/topics/tips--tricks/blogs/play--u-n-o--card--game-in--neptune-with--redis----git-hub
-- https://fabriziopace.dev/blog/neptune-uno-card-game
+- <a href='https://community.neptune-software.com/topics/tips--tricks/blogs/play--u-n-o--card--game-in--neptune-with--redis----git-hub' target="_blank">Neptune Software Blog - Play UNO! Card Game in Neptune with Redis</a>
+- <a href='https://fabriziopace.dev/blog/neptune-uno-card-game' target="_blank">Personal Website Blog - Play UNO! Card Game in Neptune with Redis</a>
